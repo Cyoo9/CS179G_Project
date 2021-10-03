@@ -25,8 +25,8 @@ class Cs179GCrawlerPipeline(object):
         self.curr.execute("""DROP TABLE IF EXISTS questions_tb""")
         self.curr.execute("""create table questions_tb(
             title text,
-            author text,
-            tag text
+            url text,
+            date_posted text
         )""")
 
     def process_item(self, item):
@@ -37,7 +37,7 @@ class Cs179GCrawlerPipeline(object):
         self.curr.execute("""insert into questions_tb values(%s, %s, %s)""",
         (
             item['title'][0],
-            item['author'][0],
-            item['tag'][0]
+            item['url'][0],
+            item['date_posted'][0]
         ))
         self.conn.commit() 
