@@ -5,8 +5,7 @@ Big data analytics project using Spark
 - Use spider to crawl data 
 
 # pipelines.py 
-- Use Spark to store crawled data inside MySQL / NoSQL database ( uncomment this line: ITEM_PIPELINES = {
-    'cs179g_crawler.pipelines.Cs179GCrawlerPipeline': 300,} inside settings.py ).
+- Use Spark to store crawled data inside MySQL / NoSQL database 
 
 # execute 
 - scrapy crawl <spider_name> 
