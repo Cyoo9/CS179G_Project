@@ -1,5 +1,5 @@
 # CS179G_Project
-Big data analytics project using Python Spark and MySQL DB
+Big data analytics project using Spark 
 
 # <spider_name>.py 
 - Use spider to crawl data 
