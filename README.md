@@ -2,8 +2,8 @@
 Big data analytics project using Spark 
 
 # After cloning
-- git branch <your-branch-name>
-- git checkout <your-branch-name>
+- git branch *your-branch-name*
+- git checkout *your-branch-name*
 - git push --set-upstream origin testing22 
 
 # <spider_name>.py 
