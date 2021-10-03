@@ -1,16 +1,26 @@
 import scrapy
 
-from scrapy import Spider
 from scrapy.selector import Selector
+# from scrapy.linkextractors import LinkExtractor
+# from scrapy.spiders import Rule
 
 from ..items import QuestionItem 
 
 class StackOverflowSpider(scrapy.Spider):
     name = "stack"
     allowed_domains = ["stackoverflow.com"]
-    start_urls = [
-        "http://stackoverflow.com/questions?pagesize=50&sort=newest",
-    ]
+    start_urls = []
+    # rules = [
+    #     Rule(LinkExtractor(allow=r'questions\?tab=newest&page=\b[0-9]\b'),         
+    #     callback='parse', follow=True)
+    # ]
+
+    def __init__(self):
+        url = 'http://stackoverflow.com/questions?tab=newest&page='
+
+        for page in range(1, 5):
+            self.start_urls.append(url + str(page))
+             
     
     def parse(self, response):
         questions = Selector(response).xpath('//div[@class="summary"]/h3')
