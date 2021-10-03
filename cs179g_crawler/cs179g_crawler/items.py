@@ -7,10 +7,10 @@
 
 import scrapy
 
-class QuoteItem(scrapy.Item):
+class QuestionItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     title = scrapy.Field()
-    author = scrapy.Field()
-    tag = scrapy.Field() 
+    url = scrapy.Field()
+    date_posted = scrapy.Field() 
     pass

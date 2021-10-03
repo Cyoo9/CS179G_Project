@@ -22,8 +22,8 @@ class Cs179GCrawlerPipeline(object):
         self.curr = self.conn.cursor()
     
     def create_table(self):
-        self.curr.execute("""DROP TABLE IF EXISTS quotes_tb""")
-        self.curr.execute("""create table quotes_tb(
+        self.curr.execute("""DROP TABLE IF EXISTS questions_tb""")
+        self.curr.execute("""create table questions_tb(
             title text,
             author text,
             tag text
@@ -34,7 +34,7 @@ class Cs179GCrawlerPipeline(object):
         return item
 
     def store_db(self, item):
-        self.curr.execute("""insert into quotes_tb values(%s, %s, %s)""",
+        self.curr.execute("""insert into questions_tb values(%s, %s, %s)""",
         (
             item['title'][0],
             item['author'][0],
