@@ -18,7 +18,7 @@ class StackOverflowSpider(scrapy.Spider):
     def __init__(self):
         url = 'http://stackoverflow.com/questions?tab=newest&page='
 
-        for page in range(1, 5):
+        for page in range(1, 3):
             self.start_urls.append(url + str(page))
              
     
