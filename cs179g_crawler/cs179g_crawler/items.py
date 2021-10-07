@@ -7,8 +7,26 @@
 
 import scrapy
 
-
-class Cs179GCrawlerItem(scrapy.Item):
+class QuestionItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    title = scrapy.Field()
+    url = scrapy.Field()
+    date_posted = scrapy.Field() 
     pass
+
+
+class IssuesItem(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    title = scrapy.Field() 
+    url = scrapy.Field()
+    pass
+
+class ReleasesItem(scrapy.Item): 
+    tag = scrapy.Field()
+    url = scrapy.Field()
+    features_and_fixes = scrapy.Field()
+    fixes = scrapy.Field()
+
+    pass 

@@ -1,5 +1,8 @@
 # CS179G_Project
-Big data analytics project using Spark 
+Big data analytics project using Spark
+
+# pipelines.py 
+- Use pyspark to store crawled data into MySQL / NoSQL database.
 
 # After cloning
 - git branch *your-branch-name*
@@ -13,4 +16,11 @@ Big data analytics project using Spark
 - Use Spark to store crawled data inside MySQL / NoSQL database 
 
 # execute 
-- scrapy crawl <spider_name> 
+- scrapy crawl stack_spider (stackoverflow questions)
+- scrapy crawl releases_spider (github releases spider. using vue storefront repo)
+- scrapy crawl issues_spider (github issues spider. using vue storefront repo) 
+
+# output files
+- items.json / items.csv (stackoverflow live questions)
+- issues.json (github issues)
+- releases.json (github releases)
