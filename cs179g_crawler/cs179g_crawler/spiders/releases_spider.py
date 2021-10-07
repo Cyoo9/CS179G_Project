@@ -19,7 +19,7 @@ class ReleasesSpider(scrapy.Spider):
             yield items
 
         next_page = response.css('div.pagination a:nth-child(2)::attr(href)').get()
-        is_first_page = response.css('div.pagination span::attr(text)').get() == 'Preview'
+        is_first_page = response.css('div.pagination span::attr(text)').get() == 'Previous'
 
         if is_first_page:
             next_page = response.css('div.pagination a:nth-child(1)::attr(href)').get()
