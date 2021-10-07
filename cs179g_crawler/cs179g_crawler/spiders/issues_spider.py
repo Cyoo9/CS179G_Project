@@ -9,7 +9,7 @@ class IssuesSpider(scrapy.Spider):
     start_urls = []
 
     def __init__(self):
-        url = 'https://github.com/vuestorefront/storefront-ui/issues?page='
+        url = 'https://github.com/facebook/react/issues?q=is%3Aissue+is%3Aclosed&page='
 
         for page in range(1, 3): 
             self.start_urls.append(url + str(page))
