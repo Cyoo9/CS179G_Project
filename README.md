@@ -2,7 +2,7 @@
 Big data analytics project using Spark
 
 # pipelines.py 
-- Use pyspark to store crawled data into MySQL / NoSQL database.
+- Use pyspark to store crawled data into MySQL database.
 
 # After cloning
 - git branch *your-branch-name*
