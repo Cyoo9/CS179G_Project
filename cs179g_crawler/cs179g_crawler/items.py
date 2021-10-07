@@ -26,7 +26,7 @@ class IssuesItem(scrapy.Item):
 class ReleasesItem(scrapy.Item): 
     tag = scrapy.Field()
     url = scrapy.Field()
-    features = scrapy.Field()
+    features_and_fixes = scrapy.Field()
     fixes = scrapy.Field()
 
     pass 
