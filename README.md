@@ -4,6 +4,17 @@ Big data analytics project using Spark
 # pipelines.py 
 - Use pyspark to store crawled data into MySQL / NoSQL database.
 
+# After cloning
+- git branch *your-branch-name*
+- git checkout *your-branch-name*
+- git push --set-upstream origin *your-branch-name*
+
+# <spider_name>.py 
+- Use spider to crawl data 
+
+# pipelines.py 
+- Use Spark to store crawled data inside MySQL / NoSQL database 
+
 # execute 
 - scrapy crawl stack_spider (stackoverflow questions)
 - scrapy crawl releases_spider (github releases spider. using vue storefront repo)
