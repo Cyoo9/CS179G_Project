@@ -15,6 +15,7 @@ class ReleasesSpider(scrapy.Spider):
             items['tag'] = release.xpath('div[@class="release-header"]/div/div/a/text()').extract()[0]
             items['url'] = release.xpath('div[@class="release-header"]/div/div/a/@href').extract()[0]
             items['features_and_fixes'] = release.xpath('div[@class="markdown-body"]/ul/li/text()').extract()
+            items['date'] = release.xpath('div[@class="release-header"]/p/relative-time/@datetime').extract()[0]
 
             yield items
 
