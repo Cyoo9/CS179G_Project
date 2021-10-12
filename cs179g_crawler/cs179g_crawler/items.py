@@ -7,20 +7,13 @@
 
 import scrapy
 
-class QuestionItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    title = scrapy.Field()
-    url = scrapy.Field()
-    date_posted = scrapy.Field() 
-    pass
-
-
 class IssuesItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     title = scrapy.Field() 
     url = scrapy.Field()
+    date = scrapy.Field()
+    status = scrapy.Field()
     pass
 
 class ReleasesItem(scrapy.Item): 
@@ -28,5 +21,6 @@ class ReleasesItem(scrapy.Item):
     url = scrapy.Field()
     features_and_fixes = scrapy.Field()
     fixes = scrapy.Field()
+    date = scrapy.Field()
 
     pass 

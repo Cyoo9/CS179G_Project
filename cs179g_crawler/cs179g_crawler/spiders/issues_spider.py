@@ -15,10 +15,11 @@ class IssuesSpider(scrapy.Spider):
             self.start_urls.append(url + str(page))
 
     def parse(self, response):
-        issues = Selector(response).xpath('//div[starts-with(@id, "issue")]/div')
+        issues = Selector(response).xpath('//div[starts-with(@id, "issue")]/div/div[@class="flex-auto min-width-0 p-2 pr-3 pr-md-2"]')
         for issue in issues:
             item = IssuesItem()
-            item['title'] = issue.xpath('a[@class="d-block d-md-none position-absolute top-0 bottom-0 left-0 right-0"]/@aria-label').extract()[0]
-            item['url'] = issue.xpath('a[@class="d-block d-md-none position-absolute top-0 bottom-0 left-0 right-0"]/@href').extract()[0]
-
+            item['title'] = issue.xpath('a[@class="Link--primary v-align-middle no-underline h4 js-navigation-open markdown-title"]/text()').extract()[0]
+            item['url'] = issue.xpath('a[@class="Link--primary v-align-middle no-underline h4 js-navigation-open markdown-title"]/@href').extract()[0]
+            item['date'] = issue.xpath('div[@class="d-flex mt-1 text-small color-text-secondary"]/span/relative-time/@datetime').extract()[0]
+            item['status'] = issue.xpath('span[@class="labels lh-default d-block d-md-inline"]/a/@data-name').extract()
             yield item     
