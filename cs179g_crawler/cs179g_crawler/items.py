@@ -16,11 +16,17 @@ class IssuesItem(scrapy.Item):
     status = scrapy.Field()
     pass
 
+class PullRequestsItem(scrapy.Item):
+    title = scrapy.Field()
+    id = scrapy.Field()
+    linked_issue = scrapy.Field()
+    pass
+
+
 class ReleasesItem(scrapy.Item): 
     tag = scrapy.Field()
     url = scrapy.Field()
+    pull_request_ids = scrapy.Field() 
     features_and_fixes = scrapy.Field()
-    fixes = scrapy.Field()
     date = scrapy.Field()
-
     pass 
