@@ -37,7 +37,7 @@
 }, {
 	"title": ["Fix react-tools module"],
 	"id": ["#11"],
-	"linked_issue": ["", "        Can't require() react-tools module      "]
+	"linked_issue": ["", "Can'trequire()react-toolsmodule"]
 }, {
 	"title": ["add a link to my tutorial repo"],
 	"id": ["#13"],
@@ -217,7 +217,7 @@
 }, {
 	"title": ["Example demonstrating how to use React with RequireJS"],
 	"id": ["#57"],
-	"linked_issue": ["", "        React in RequireJS ?      "]
+	"linked_issue": ["", "ReactinRequireJS?"]
 }, {
 	"title": ["Make unmountAndReleaseReactRootNode not throw"],
 	"id": ["#58"],
@@ -281,7 +281,7 @@
 }, {
 	"title": ["Run inner componentDidMount method first"],
 	"id": ["#77"],
-	"linked_issue": ["", "        Ordering of componentDidMount events      "]
+	"linked_issue": ["", "OrderingofcomponentDidMountevents"]
 }, {
 	"title": [],
 	"id": [],
@@ -293,7 +293,7 @@
 }, {
 	"title": ["Upgrade Commoner and Recast to latest versions"],
 	"id": ["#81"],
-	"linked_issue": ["", "        bin/jsx should not relativize required module IDs unless --relativize is passed      "]
+	"linked_issue": ["", "bin/jsxshouldnotrelativizerequiredmoduleIDsunless--relativizeispassed"]
 }, {
 	"title": [],
 	"id": [],
@@ -457,7 +457,7 @@
 }, {
 	"title": ["Remove content property"],
 	"id": ["#120"],
-	"linked_issue": ["", "        Remove content property      "]
+	"linked_issue": ["", "Removecontentproperty"]
 }, {
 	"title": [],
 	"id": [],
@@ -557,11 +557,11 @@
 }, {
 	"title": ["Bump Commoner version to fix EMFILE errors"],
 	"id": ["#144"],
-	"linked_issue": ["", "        Not all tests running?      "]
+	"linked_issue": ["", "Notalltestsrunning?"]
 }, {
 	"title": ["Bump Commoner version to disable dependency scanning by default"],
 	"id": ["#145"],
-	"linked_issue": ["", "        jsx overwrites modules without --relativize      "]
+	"linked_issue": ["", "jsxoverwritesmoduleswithout--relativize"]
 }, {
 	"title": ["Add figure and figcaption elements to React.DOM (already supported by jsx)"],
 	"id": ["#147"],
@@ -581,7 +581,7 @@
 }, {
 	"title": ["Upgrade Commoner to --watch directories instead of individual files"],
 	"id": ["#150"],
-	"linked_issue": ["", "        jsx offline transform exits with error code 1 on any change (Ubuntu 12.10)      "]
+	"linked_issue": ["", "jsxofflinetransformexitswitherrorcode1onanychange(Ubuntu12.10)"]
 }, {
 	"title": [],
 	"id": [],
@@ -893,7 +893,7 @@
 }, {
 	"title": ["Fix docblock parsing to handle "],
 	"id": ["#230"],
-	"linked_issue": ["", "        Docblock parsing fails with \\r\\n      "]
+	"linked_issue": ["", "Docblockparsingfailswith\\r\\n"]
 }, {
 	"title": [" npm module"],
 	"id": ["#232"],
@@ -981,7 +981,7 @@
 }, {
 	"title": ["Fix behavior of ReactDOMSelect with "],
 	"id": ["#251"],
-	"linked_issue": ["", "        ", " for select not working\n      "]
+	"linked_issue": ["", "", " for select not working\n      "]
 }, {
 	"title": ["Run lint automatically in Travis"],
 	"id": ["#252"],
@@ -1017,7 +1017,7 @@
 }, {
 	"title": ["Hold PhantomJS version at 1.9.0-1."],
 	"id": ["#261"],
-	"linked_issue": ["", "        Don't auto-upgrade phantomjs dependency past 1.9.x      "]
+	"linked_issue": ["", "Don'tauto-upgradephantomjsdependencypast1.9.x"]
 }, {
 	"title": ["Upgrade PhantomJS, log PATH for testing"],
 	"id": ["#262"],
@@ -1045,11 +1045,11 @@
 }, {
 	"title": ["Warn about unknown property values"],
 	"id": ["#267"],
-	"linked_issue": ["", "        Consider warning when using the wrong case for an HTML attribute      "]
+	"linked_issue": ["", "ConsiderwarningwhenusingthewrongcaseforanHTMLattribute"]
 }, {
 	"title": ["Make .bind(null, ...) work on autobound methods"],
 	"id": ["#268"],
-	"linked_issue": ["", "        .bind(null, ...) should work on autobound methods for partial application      "]
+	"linked_issue": ["", ".bind(null,...)shouldworkonautoboundmethodsforpartialapplication"]
 }, {
 	"title": ["jsx transform: \"for\" should be renamed as \"class\" is"],
 	"id": ["#269"],
@@ -1089,7 +1089,7 @@
 }, {
 	"title": ["Include rootNode as arg to componentWillUnmount"],
 	"id": ["#276"],
-	"linked_issue": ["", "        Pass rootNode for componentWillUnmount      "]
+	"linked_issue": ["", "PassrootNodeforcomponentWillUnmount"]
 }, {
 	"title": ["typo fix"],
 	"id": ["#277"],
@@ -1105,11 +1105,11 @@
 }, {
 	"title": ["Fix controlled radio button behavior"],
 	"id": ["#281"],
-	"linked_issue": ["", "        Radio buttons not working correctly      "]
+	"linked_issue": ["", "Radiobuttonsnotworkingcorrectly"]
 }, {
 	"title": ["have setState work with key, value along with an object"],
 	"id": ["#282"],
-	"linked_issue": ["", "        setState (and others) parameters format      "]
+	"linked_issue": ["", "setState(andothers)parametersformat"]
 }, {
 	"title": ["Fix dead link to reference in tutorial"],
 	"id": ["#283"],
@@ -1133,7 +1133,7 @@
 }, {
 	"title": ["Remove all uses of ExecutionEnvironment.global"],
 	"id": ["#287"],
-	"linked_issue": ["", "        React should support Content Security Policy      "]
+	"linked_issue": ["", "ReactshouldsupportContentSecurityPolicy"]
 }, {
 	"title": ["Add missing \"use strict\" statement to pass lint"],
 	"id": ["#288"],
@@ -1153,7 +1153,7 @@
 }, {
 	"title": ["Support props for <meta> elements."],
 	"id": ["#293"],
-	"linked_issue": ["", "        ", " dom attribute not supported\n      "]
+	"linked_issue": ["", "", " dom attribute not supported\n      "]
 }, {
 	"title": ["More helpful message if you update an unrendered component"],
 	"id": ["#294"],
@@ -1321,7 +1321,7 @@
 }, {
 	"title": ["JSX: Respect original spacing and newlines better"],
 	"id": ["#336"],
-	"linked_issue": ["", "        JSX transform doesn't always preserve line numbers      "]
+	"linked_issue": ["", "JSXtransformdoesn'talwayspreservelinenumbers"]
 }, {
 	"title": ["Fix ReactRenderDocument tests"],
 	"id": ["#338"],
@@ -1329,7 +1329,7 @@
 }, {
 	"title": ["Fix full-page rendering"],
 	"id": ["#339"],
-	"linked_issue": ["", "        Fails on whole-document rendering      "]
+	"linked_issue": ["", "Failsonwhole-documentrendering"]
 }, {
 	"title": [],
 	"id": [],
@@ -1393,7 +1393,7 @@
 }, {
 	"title": ["Requiring event listeners to be functions for binding"],
 	"id": ["#355"],
-	"linked_issue": ["", "        No error checking for binding an event to a missing handler      "]
+	"linked_issue": ["", "Noerrorcheckingforbindinganeventtoamissinghandler"]
 }, {
 	"title": ["Add link to third-party ", " in docs."],
 	"id": ["#356"],
@@ -1461,7 +1461,7 @@
 }, {
 	"title": ["react-with-addons build"],
 	"id": ["#370"],
-	"linked_issue": ["", "        react-with-addons.js      "]
+	"linked_issue": ["", "react-with-addons.js"]
 }, {
 	"title": ["Fix issue #302 - Standardize prop -> DOM attribute process"],
 	"id": ["#372"],
@@ -1513,7 +1513,7 @@
 }, {
 	"title": ["Add doc link to DOM differences from JSX gotchas"],
 	"id": ["#384"],
-	"linked_issue": ["", "        inline css gotcha. style requires JSON not a string      "]
+	"linked_issue": ["", "inlinecssgotcha.stylerequiresJSONnotastring"]
 }, {
 	"title": ["add line-height to unitless css props, test cases"],
 	"id": ["#386"],
@@ -1725,7 +1725,7 @@
 }, {
 	"title": ["Make SelectEventPlugin not throw for range inputs"],
 	"id": ["#438"],
-	"linked_issue": ["", "        ReactLink doesn't work for input type=\"range\"      "]
+	"linked_issue": ["", "ReactLinkdoesn'tworkforinputtype=\"range\""]
 }, {
 	"title": ["New marketing copy"],
 	"id": ["#440"],
@@ -1769,7 +1769,7 @@
 }, {
 	"title": ["Move heading anchors 50px up to avoid nav bar"],
 	"id": ["#448"],
-	"linked_issue": ["", "        Docs nav header behaviour on different screen sizes      "]
+	"linked_issue": ["", "Docsnavheaderbehaviourondifferentscreensizes"]
 }, {
 	"title": [],
 	"id": [],
@@ -1805,7 +1805,7 @@
 }, {
 	"title": ["Bump populist version to v0.1.4"],
 	"id": ["#457"],
-	"linked_issue": ["", "        Run tests in IE8      "]
+	"linked_issue": ["", "RuntestsinIE8"]
 }, {
 	"title": ["remove examples/wrapup"],
 	"id": ["#458"],
@@ -1853,7 +1853,7 @@
 }, {
 	"title": ["Warn for an invalid propType specification"],
 	"id": ["#466"],
-	"linked_issue": ["", "        Perhaps warn when writing a bad propTypes spec      "]
+	"linked_issue": ["", "PerhapswarnwhenwritingabadpropTypesspec"]
 }, {
 	"title": [],
 	"id": [],
@@ -2285,7 +2285,7 @@
 }, {
 	"title": ["Don't mutate passed-in props"],
 	"id": ["#576"],
-	"linked_issue": ["", "        renderComponent without jsx: clone the props object passed in, to avoid pollution      "]
+	"linked_issue": ["", "renderComponentwithoutjsx:clonethepropsobjectpassedin,toavoidpollution"]
 }, {
 	"title": ["Add explination of autoBind to DOM Event Listener tip"],
 	"id": ["#577"],
@@ -2377,7 +2377,7 @@
 }, {
 	"title": ["Don't use .returnValue if .defaultPrevented exists"],
 	"id": ["#597"],
-	"linked_issue": ["", "        On newest chrome we get a warning with ", "\n      "]
+	"linked_issue": ["", "Onnewestchromewegetawarningwith", "\n      "]
 }, {
 	"title": ["Be resilient to fn.name not existing in IE"],
 	"id": ["#598"],
@@ -2509,7 +2509,7 @@
 }, {
 	"title": ["Store pending state updates directly in this.state"],
 	"id": ["#629"],
-	"linked_issue": ["", "        Pending state updates may be confusing      "]
+	"linked_issue": ["", "Pendingstateupdatesmaybeconfusing"]
 }, {
 	"title": ["Remove unused updatePropertiesByID"],
 	"id": ["#630"],
@@ -2541,7 +2541,7 @@
 }, {
 	"title": ["ReactTransitionGroup can handle components being re-added before 'leave' transition has completed."],
 	"id": ["#642"],
-	"linked_issue": ["", "        ReactAnimationGroup failing to re-add components/reverse animations.      "]
+	"linked_issue": ["", "ReactAnimationGroupfailingtore-addcomponents/reverseanimations."]
 }, {
 	"title": ["Fix scrollLeft/scrollTop warning in latest Chrome"],
 	"id": ["#643"],
@@ -2549,7 +2549,7 @@
 }, {
 	"title": ["Validate node nesting structure"],
 	"id": ["#644"],
-	"linked_issue": ["", "        React should throw on nested <p> tags      "]
+	"linked_issue": ["", "Reactshouldthrowonnested<p>tags"]
 }, {
 	"title": [],
 	"id": [],
@@ -3061,7 +3061,7 @@
 }, {
 	"title": ["Set event type on enter/leave events"],
 	"id": ["#772"],
-	"linked_issue": ["", "        Synthetic enter/leave events all have type ", "\n      "]
+	"linked_issue": ["", "Syntheticenter/leaveeventsallhavetype", "\n      "]
 }, {
 	"title": ["Check for selection on keyup instead of deferring"],
 	"id": ["#773"],
@@ -3137,7 +3137,7 @@
 }, {
 	"title": ["Set target properties explicitly for enter/leave"],
 	"id": ["#789"],
-	"linked_issue": ["", "        onMouseEnter target/relatedTarget incorrect      "]
+	"linked_issue": ["", "onMouseEntertarget/relatedTargetincorrect"]
 }, {
 	"title": ["Simplify joinClasses utility, faster"],
 	"id": ["#792"],
@@ -3197,7 +3197,7 @@
 }, {
 	"title": ["Use proper window object for iframe in enter/leave"],
 	"id": ["#803"],
-	"linked_issue": ["", "        enter/leave event targets are probably wrong when rendering into an iframe      "]
+	"linked_issue": ["", "enter/leaveeventtargetsareprobablywrongwhenrenderingintoaniframe"]
 }, {
 	"title": ["Remove mentions of browserify in examples"],
 	"id": ["#804"],
@@ -3221,7 +3221,7 @@
 }, {
 	"title": ["Prefer textContent to innerText"],
 	"id": ["#808"],
-	"linked_issue": ["", "        Changing text element content in SVG doesn't work properly      "]
+	"linked_issue": ["", "ChangingtextelementcontentinSVGdoesn'tworkproperly"]
 }, {
 	"title": ["Add gulp-react to Helpful OSS Projects"],
 	"id": ["#809"],
@@ -3233,7 +3233,7 @@
 }, {
 	"title": ["Document displayName"],
 	"id": ["#811"],
-	"linked_issue": ["", "        Document displayName      "]
+	"linked_issue": ["", "DocumentdisplayName"]
 }, {
 	"title": ["Normalize view and detail properties"],
 	"id": ["#813"],
@@ -3673,7 +3673,7 @@
 }, {
 	"title": ["Fix double-binding to submit event"],
 	"id": ["#922"],
-	"linked_issue": ["", "        Latest build cause front page todo error      "]
+	"linked_issue": ["", "Latestbuildcausefrontpagetodoerror"]
 }, {
 	"title": ["Update build dependencies"],
 	"id": ["#924"],
@@ -3681,7 +3681,7 @@
 }, {
 	"title": ["[Docs] Remove comment section"],
 	"id": ["#925"],
-	"linked_issue": ["", "        Do something about the comment section at the bottom of docs      "]
+	"linked_issue": ["", "Dosomethingaboutthecommentsectionatthebottomofdocs"]
 }, {
 	"title": ["docs fix back link in Examples"],
 	"id": ["#926"],
@@ -3741,7 +3741,7 @@
 }, {
 	"title": ["Simulate synthetic events using ReactTestUtils"],
 	"id": ["#939"],
-	"linked_issue": ["", "        ReactDOMInput should support ReactLink in IE      "]
+	"linked_issue": ["", "ReactDOMInputshouldsupportReactLinkinIE"]
 }, {
 	"title": ["[docs] Document newly added unitless css props in tips"],
 	"id": ["#940"],
@@ -3817,7 +3817,7 @@
 }, {
 	"title": ["renderComponentToString memory leak fix for #954 "],
 	"id": ["#960"],
-	"linked_issue": ["", "        renderComponentToString with events leaks unless component unmounted      "]
+	"linked_issue": ["", "renderComponentToStringwitheventsleaksunlesscomponentunmounted"]
 }, {
 	"title": ["[RFC] New ReactDefaultPerf"],
 	"id": ["#962"],
@@ -3889,7 +3889,7 @@
 }, {
 	"title": ["Remove build/modules/ at beginning of ", " and "],
 	"id": ["#980"],
-	"linked_issue": ["", "        Only run tests built from files that exist in src/      "]
+	"linked_issue": ["", "Onlyruntestsbuiltfromfilesthatexistinsrc/"]
 }, {
 	"title": [],
 	"id": [],
@@ -3897,7 +3897,7 @@
 }, {
 	"title": ["Upgrade Commoner to v0.9.0 to get rid of output directory locking"],
 	"id": ["#981"],
-	"linked_issue": ["", "        jsx --watch crash      "]
+	"linked_issue": ["", "jsx--watchcrash"]
 }, {
 	"title": ["fix(ServerRendering): execution should be async"],
 	"id": ["#982"],
@@ -3953,7 +3953,7 @@
 }, {
 	"title": ["Allow rendering markup string without checksum and React ID"],
 	"id": ["#994"],
-	"linked_issue": ["", "        Make it possible to renderComponentToString without extra attributes      "]
+	"linked_issue": ["", "MakeitpossibletorenderComponentToStringwithoutextraattributes"]
 }, {
 	"title": [],
 	"id": [],
@@ -4253,7 +4253,7 @@
 }, {
 	"title": ["Assert that event listeners are real functions"],
 	"id": ["#1069"],
-	"linked_issue": ["", "        Error message when passing a string instead of a function handler could be more clear      "]
+	"linked_issue": ["", "Errormessagewhenpassingastringinsteadofafunctionhandlercouldbemoreclear"]
 }, {
 	"title": ["Quote all CSS keys to be safe against Closure"],
 	"id": ["#1070"],
@@ -4429,7 +4429,7 @@
 }, {
 	"title": ["Add download and hrefLang attributes"],
 	"id": ["#1116"],
-	"linked_issue": ["", "        Support HTML5 anchor tag attributes      "]
+	"linked_issue": ["", "SupportHTML5anchortagattributes"]
 }, {
 	"title": [],
 	"id": [],
@@ -4437,7 +4437,7 @@
 }, {
 	"title": ["Update envify to 1.2.0"],
 	"id": ["#1117"],
-	"linked_issue": ["", "        Browserify -r react takes almost 7 seconds      "]
+	"linked_issue": ["", "Browserify-rreacttakesalmost7seconds"]
 }, {
 	"title": [],
 	"id": [],
@@ -4477,11 +4477,11 @@
 }, {
 	"title": ["Make rendering to null work and make it injectable"],
 	"id": ["#1127"],
-	"linked_issue": ["", "        React.EmptyComponent (NullComponent?)      "]
+	"linked_issue": ["", "React.EmptyComponent(NullComponent?)"]
 }, {
 	"title": ["Add media element attributes"],
 	"id": ["#1128"],
-	"linked_issue": ["", "        Unable to set audio tag attributes      "]
+	"linked_issue": ["", "Unabletosetaudiotagattributes"]
 }, {
 	"title": [],
 	"id": [],
@@ -4605,7 +4605,7 @@
 }, {
 	"title": ["Remove TodoMVCs from examples/"],
 	"id": ["#1156"],
-	"linked_issue": ["", "        Remove todomvc from examples?      "]
+	"linked_issue": ["", "Removetodomvcfromexamples?"]
 }, {
 	"title": [],
 	"id": [],
@@ -4709,7 +4709,7 @@
 }, {
 	"title": ["Remove usage of {' '} in docs and tests"],
 	"id": ["#1182"],
-	"linked_issue": ["", "        Remove usage of {' '} in docs and examples      "]
+	"linked_issue": ["", "Removeusageof{''}indocsandexamples"]
 }, {
 	"title": ["meta http-equiv attribute name"],
 	"id": ["#1183"],
@@ -4757,7 +4757,7 @@
 }, {
 	"title": ["Add polygon tag to transform"],
 	"id": ["#1193"],
-	"linked_issue": ["", "        Polygon missing from transform, but in React.DOM      "]
+	"linked_issue": ["", "Polygonmissingfromtransform,butinReact.DOM"]
 }, {
 	"title": ["Add docs for RAFBatching"],
 	"id": ["#1194"],
@@ -4789,7 +4789,7 @@
 }, {
 	"title": ["Remove key-collision invariant."],
 	"id": ["#1201"],
-	"linked_issue": ["", "        Just warn on clashing keys but proceed with render      "]
+	"linked_issue": ["", "Justwarnonclashingkeysbutproceedwithrender"]
 }, {
 	"title": ["Merge the lists of JSX integrations in the docs."],
 	"id": ["#1203"],
@@ -4853,7 +4853,7 @@
 }, {
 	"title": ["Fix empty JSX expressions sometimes emitting erroneous commas"],
 	"id": ["#1219"],
-	"linked_issue": ["", "        JSX Comments: ", " does not work\n      "]
+	"linked_issue": ["", "JSXComments:", " does not work\n      "]
 }, {
 	"title": ["Add XML style JSX namespacing support using @jsxns docblock comment."],
 	"id": ["#1221"],
@@ -4913,7 +4913,7 @@
 }, {
 	"title": ["Batch updates caused by handlers in multiple roots"],
 	"id": ["#1231"],
-	"linked_issue": ["", "        Event handlers from different component trees should batch together      "]
+	"linked_issue": ["", "Eventhandlersfromdifferentcomponenttreesshouldbatchtogether"]
 }, {
 	"title": ["Add newforms to the Complementary Tools page"],
 	"id": ["#1233"],
@@ -5085,7 +5085,7 @@
 }, {
 	"title": ["Fix transition end detection for Android"],
 	"id": ["#1276"],
-	"linked_issue": ["", "        ReactCSSTransitionGroup broken on Android      "]
+	"linked_issue": ["", "ReactCSSTransitionGroupbrokenonAndroid"]
 }, {
 	"title": [],
 	"id": [],
@@ -5093,7 +5093,7 @@
 }, {
 	"title": ["Upgrade Commoner to v0.9.2 to silence deprecation warnings"],
 	"id": ["#1279"],
-	"linked_issue": ["", "        JSX fails with 'resolve is deprecated, use Q instead. Error'      "]
+	"linked_issue": ["", "JSXfailswith'resolveisdeprecated,useQinstead.Error'"]
 }, {
 	"title": ["Move complementary tools to wiki for easier management."],
 	"id": ["#1280"],
@@ -5157,7 +5157,7 @@
 }, {
 	"title": ["Revamp and fix PropTypes"],
 	"id": ["#1294"],
-	"linked_issue": ["", "        PropTypes.*.weak is confusing (and undocumented)      "]
+	"linked_issue": ["", "PropTypes.*.weakisconfusing(andundocumented)"]
 }, {
 	"title": [],
 	"id": [],
@@ -5185,7 +5185,7 @@
 }, {
 	"title": ["Add invariant for a mixin not to be undefined."],
 	"id": ["#1305"],
-	"linked_issue": ["", "        Make React.createClass warn/throw if mixins contains undefined value      "]
+	"linked_issue": ["", "MakeReact.createClasswarn/throwifmixinscontainsundefinedvalue"]
 }, {
 	"title": ["Add dx and dy attributes for SVG text"],
 	"id": ["#1306"],
@@ -5309,7 +5309,7 @@
 }, {
 	"title": ["Clone objects in immutable tests"],
 	"id": ["#1330"],
-	"linked_issue": ["", "        Disable webdriver-jasmine:saucelabs_android test temporarily      "]
+	"linked_issue": ["", "Disablewebdriver-jasmine:saucelabs_androidtesttemporarily"]
 }, {
 	"title": ["[Jshint] Allow Jasmine globals in *-test.js"],
 	"id": ["#1332"],
@@ -5345,7 +5345,7 @@
 }, {
 	"title": ["Download attribute"],
 	"id": ["#1340"],
-	"linked_issue": ["", "        Improve handling of download attribute      "]
+	"linked_issue": ["", "Improvehandlingofdownloadattribute"]
 }, {
 	"title": [],
 	"id": [],
@@ -5441,7 +5441,7 @@
 }, {
 	"title": ["Make Simulate.mouseEnter/Leave use direct dispatch"],
 	"id": ["#1366"],
-	"linked_issue": ["", "        Simulate.mouseEnter and Simulate.mouseLeave not working      "]
+	"linked_issue": ["", "Simulate.mouseEnterandSimulate.mouseLeavenotworking"]
 }, {
 	"title": [],
 	"id": [],
@@ -5557,7 +5557,7 @@
 }, {
 	"title": ["Add test for isValidDescriptor"],
 	"id": ["#1394"],
-	"linked_issue": ["", "        ReactComponent.isValidComponent returns true for component classes      "]
+	"linked_issue": ["", "ReactComponent.isValidComponentreturnstrueforcomponentclasses"]
 }, {
 	"title": [],
 	"id": [],
@@ -5737,7 +5737,7 @@
 }, {
 	"title": ["Upgrade jstransform to 4.0"],
 	"id": ["#1441"],
-	"linked_issue": ["", "        Bump ", " to 4.0\n      "]
+	"linked_issue": ["", "Bump", " to 4.0\n      "]
 }, {
 	"title": [],
 	"id": [],
@@ -5757,7 +5757,7 @@
 }, {
 	"title": ["DataSet and AriaSet (RFC)"],
 	"id": ["#1446"],
-	"linked_issue": ["", "        Stop doing data-*, aria-*, start using dataSet      "]
+	"linked_issue": ["", "Stopdoingdata-*,aria-*,startusingdataSet"]
 }, {
 	"title": [],
 	"id": [],
@@ -5797,7 +5797,7 @@
 }, {
 	"title": ["ReactTransitionGroup: Fix changing to null child"],
 	"id": ["#1458"],
-	"linked_issue": ["", "        CSSTransitionGroup should segue between non-null and null children      "]
+	"linked_issue": ["", "CSSTransitionGroupshouldseguebetweennon-nullandnullchildren"]
 }, {
 	"title": [],
 	"id": [],
@@ -6237,7 +6237,7 @@
 }, {
 	"title": ["Don't fail Travis on sauce failures"],
 	"id": ["#1563"],
-	"linked_issue": ["", "        Only fail travis for phantomjs      "]
+	"linked_issue": ["", "Onlyfailtravisforphantomjs"]
 }, {
 	"title": ["Use Object.prototype.hasOwnProperty for doc in IE8"],
 	"id": ["#1564"],
@@ -6257,7 +6257,7 @@
 }, {
 	"title": ["Only purgeID on ReactDOMComponent unmount"],
 	"id": ["#1568"],
-	"linked_issue": ["", "        (un)mountComponent seems to behave improperly for the root component of the update      "]
+	"linked_issue": ["", "(un)mountComponentseemstobehaveimproperlyfortherootcomponentoftheupdate"]
 }, {
 	"title": ["[idea] Remove data-reactid and traverse immediately after insertion instead (nope, still lazy!)"],
 	"id": ["#1570"],
@@ -6393,7 +6393,7 @@
 }, {
 	"title": ["Apply component and mixins specs deterministically"],
 	"id": ["#1601"],
-	"linked_issue": ["", "        Apply component spec + mixins specs deterministically      "]
+	"linked_issue": ["", "Applycomponentspec+mixinsspecsdeterministically"]
 }, {
 	"title": [],
 	"id": [],
@@ -6565,7 +6565,7 @@
 }, {
 	"title": ["Add TestUtils find/scry DOMComponent by prop"],
 	"id": ["#1651"],
-	"linked_issue": ["", "        Add find/scry by ID to test utils      "]
+	"linked_issue": ["", "Addfind/scrybyIDtotestutils"]
 }, {
 	"title": ["Expose React.addons.Perf"],
 	"id": ["#1652"],
@@ -8893,7 +8893,7 @@
 }, {
 	"title": ["Point to Flux site for Flux docs"],
 	"id": ["#2236"],
-	"linked_issue": ["", "        Remove flux docs      "]
+	"linked_issue": ["", "Removefluxdocs"]
 }, {
 	"title": ["fix typos in \"Testing Flux Applications\""],
 	"id": ["#2237"],
@@ -12425,7 +12425,7 @@
 }, {
 	"title": ["Don't cache purged nodes that are focused on unmount"],
 	"id": ["#3144"],
-	"linked_issue": ["", "        ReactMount.nodeCache is repopulated with purged nodes that are focused at unmount      "]
+	"linked_issue": ["", "ReactMount.nodeCacheisrepopulatedwithpurgednodesthatarefocusedatunmount"]
 }, {
 	"title": ["Dedupe owner-is-important warning."],
 	"id": ["#3145"],
@@ -12521,7 +12521,7 @@
 }, {
 	"title": ["Allow rendering into document fragments. Fixes #840\n"],
 	"id": ["#3169"],
-	"linked_issue": ["", "        Allow rendering into a document fragment      "]
+	"linked_issue": ["", "Allowrenderingintoadocumentfragment"]
 }, {
 	"title": ["Make tutorial CDN URLs use https"],
 	"id": ["#3170"],
@@ -12629,7 +12629,7 @@
 }, {
 	"title": ["Warn when using constructor function directly"],
 	"id": ["#3201"],
-	"linked_issue": ["", "        Handle non-factory component function errors better      "]
+	"linked_issue": ["", "Handlenon-factorycomponentfunctionerrorsbetter"]
 }, {
 	"title": [],
 	"id": [],
@@ -12921,11 +12921,11 @@
 }, {
 	"title": ["Don't use undefined as parent name in key warning"],
 	"id": ["#3275"],
-	"linked_issue": ["", "        When rendering an array, ", " produces warning message with ", "\n      "]
+	"linked_issue": ["", "Whenrenderinganarray,", " produces warning message with ", "\n      "]
 }, {
 	"title": ["Add regression test for scry order"],
 	"id": ["#3276"],
-	"linked_issue": ["", "        scryRenderedDOMComponents* does not return in DOM order      "]
+	"linked_issue": ["", "scryRenderedDOMComponents*doesnotreturninDOMorder"]
 }, {
 	"title": ["Use console.error to show stack trace in console"],
 	"id": ["#3277"],
@@ -12985,11 +12985,11 @@
 }, {
 	"title": ["ReactFragment counts as a node without warning"],
 	"id": ["#3293"],
-	"linked_issue": ["", "        React.PropTypes.node doesn't understand opaque ReactFragment type      "]
+	"linked_issue": ["", "React.PropTypes.nodedoesn'tunderstandopaqueReactFragmenttype"]
 }, {
 	"title": ["[docs] show line numbers in online jsx compiler"],
 	"id": ["#3294"],
-	"linked_issue": ["", "        JSX Complier tool doesn't have line numbers for code field.      "]
+	"linked_issue": ["", "JSXCompliertooldoesn'thavelinenumbersforcodefield."]
 }, {
 	"title": ["Add a code format in 2015-02-24-react-v0.13-rc1.md"],
 	"id": ["#3295"],
@@ -13077,7 +13077,7 @@
 }, {
 	"title": ["shallowEqual: bail if either argument is falsey"],
 	"id": ["#3317"],
-	"linked_issue": ["", "        Calling setState without getInitialState throws when using PureRenderMixin      "]
+	"linked_issue": ["", "CallingsetStatewithoutgetInitialStatethrowswhenusingPureRenderMixin"]
 }, {
 	"title": [],
 	"id": [],
@@ -13293,7 +13293,7 @@
 }, {
 	"title": ["Fixed shallowEqual for arguments that are not objects"],
 	"id": ["#3370"],
-	"linked_issue": ["", "        shallowEqual is buggy      "]
+	"linked_issue": ["", "shallowEqualisbuggy"]
 }, {
 	"title": [],
 	"id": [],
@@ -13457,11 +13457,11 @@
 }, {
 	"title": ["Fix incorrect update of style when props.style transitions from null to non-null"],
 	"id": ["#3410"],
-	"linked_issue": ["", "        Incorrect update of style attribute when style prop transitions from object -> null -> object      "]
+	"linked_issue": ["", "Incorrectupdateofstyleattributewhenstyleproptransitionsfromobject->null->object"]
 }, {
 	"title": ["Squash getDOMNode warning from isDOMComponent"],
 	"id": ["#3412"],
-	"linked_issue": ["", "        TestUtils.isDOMComponent(...) uses deprecated getDOMNode()      "]
+	"linked_issue": ["", "TestUtils.isDOMComponent(...)usesdeprecatedgetDOMNode()"]
 }, {
 	"title": ["Fix TravisCI fast bail check"],
 	"id": ["#3413"],
@@ -13469,7 +13469,7 @@
 }, {
 	"title": ["Fix up Perf a bit better for 0.13"],
 	"id": ["#3414"],
-	"linked_issue": ["", "        Double render/misreport instance count in 0.13.0      "]
+	"linked_issue": ["", "Doublerender/misreportinstancecountin0.13.0"]
 }, {
 	"title": [],
 	"id": [],
@@ -13521,7 +13521,7 @@
 }, {
 	"title": ["Ensure FullPageComponents are treated as DOM components"],
 	"id": ["#3427"],
-	"linked_issue": ["", "        Bug with find* and scry* methods in TestUtils with React 0.13.0      "]
+	"linked_issue": ["", "Bugwithfind*andscry*methodsinTestUtilswithReact0.13.0"]
 }, {
 	"title": [],
 	"id": [],
@@ -13625,7 +13625,7 @@
 }, {
 	"title": ["Fix HTML to JSX converter to work with https"],
 	"id": ["#3456"],
-	"linked_issue": ["", "        HTMLtoJSX is not defined on HTML to JSX converter page      "]
+	"linked_issue": ["", "HTMLtoJSXisnotdefinedonHTMLtoJSXconverterpage"]
 }, {
 	"title": [],
 	"id": [],
@@ -13681,7 +13681,7 @@
 }, {
 	"title": ["Validate node nesting, take 3"],
 	"id": ["#3467"],
-	"linked_issue": ["", "        React should throw on nested <p> tags      "]
+	"linked_issue": ["", "Reactshouldthrowonnested<p>tags"]
 }, {
 	"title": [],
 	"id": [],
@@ -13741,7 +13741,7 @@
 }, {
 	"title": ["Grunt/coverage"],
 	"id": ["#3482"],
-	"linked_issue": ["", "        Fix grunt test:coverage      "]
+	"linked_issue": ["", "Fixgrunttest:coverage"]
 }, {
 	"title": ["Docs: do not render components to "],
 	"id": ["#3483"],
@@ -13781,7 +13781,7 @@
 }, {
 	"title": ["Remove classSet/cx"],
 	"id": ["#3490"],
-	"linked_issue": ["", "        Remove classSet/cx entirely      "]
+	"linked_issue": ["", "RemoveclassSet/cxentirely"]
 }, {
 	"title": ["adding docs for componentWillAppear and componentDidAppear"],
 	"id": ["#3491"],
@@ -13901,7 +13901,7 @@
 }, {
 	"title": ["Display error when trying to create an element of type ", ". Fixes #3478"],
 	"id": ["#3521"],
-	"linked_issue": ["", "        Confusing error message when passing non string, non component class to React.createElement      "]
+	"linked_issue": ["", "Confusingerrormessagewhenpassingnonstring,noncomponentclasstoReact.createElement"]
 }, {
 	"title": [],
 	"id": [],
@@ -14141,7 +14141,7 @@
 }, {
 	"title": ["Warn when multiple instances of React are loaded on the same page"],
 	"id": ["#3580"],
-	"linked_issue": ["", "        Warn when two versions of React are used alongside      "]
+	"linked_issue": ["", "WarnwhentwoversionsofReactareusedalongside"]
 }, {
 	"title": [],
 	"id": [],
@@ -14197,7 +14197,7 @@
 }, {
 	"title": ["Fix server-side rendering of <select>"],
 	"id": ["#3595"],
-	"linked_issue": ["", "        React.renderComponentToStaticMarkup doesn't generate selected attributes from value/defaultValue      "]
+	"linked_issue": ["", "React.renderComponentToStaticMarkupdoesn'tgenerateselectedattributesfromvalue/defaultValue"]
 }, {
 	"title": [],
 	"id": [],
@@ -14257,11 +14257,11 @@
 }, {
 	"title": ["Mention Flux in \u201ccommunicate between components\u201d"],
 	"id": ["#3612"],
-	"linked_issue": ["", "        More detail in communication documentation. Best practices for Grandparent <> Grandchild?      "]
+	"linked_issue": ["", "Moredetailincommunicationdocumentation.BestpracticesforGrandparent<>Grandchild?"]
 }, {
 	"title": ["Fix for style not always reset when set to null"],
 	"id": ["#3614"],
-	"linked_issue": ["", "        setting attribute \"style\" to null breaks this attribute      "]
+	"linked_issue": ["", "settingattribute\"style\"tonullbreaksthisattribute"]
 }, {
 	"title": [],
 	"id": [],
@@ -14269,7 +14269,7 @@
 }, {
 	"title": ["Switch to parent-based context.  Fixes #2112."],
 	"id": ["#3615"],
-	"linked_issue": ["", "        Switch the Context to use the Parent tree instead of the Owner tree      "]
+	"linked_issue": ["", "SwitchtheContexttousetheParenttreeinsteadoftheOwnertree"]
 }, {
 	"title": [],
 	"id": [],
@@ -14453,7 +14453,7 @@
 }, {
 	"title": ["[docs] Use marked instead of Showdown and escape HTML"],
 	"id": ["#3663"],
-	"linked_issue": ["", "        Add comment in front-page markdown example about XSS      "]
+	"linked_issue": ["", "Addcommentinfront-pagemarkdownexampleaboutXSS"]
 }, {
 	"title": [],
 	"id": [],
@@ -14509,7 +14509,7 @@
 }, {
 	"title": ["Add warning for getDefaultProps on ES6 classes"],
 	"id": ["#3675"],
-	"linked_issue": ["", "        getDefaultProps not working      "]
+	"linked_issue": ["", "getDefaultPropsnotworking"]
 }, {
 	"title": ["Remove withContext from top-level API"],
 	"id": ["#3676"],
@@ -14669,11 +14669,11 @@
 }, {
 	"title": ["Update Changelog for 0.13 to mention JSXTransfomer change"],
 	"id": ["#3712"],
-	"linked_issue": ["", "        JSXTransformer 0.13 changes source map return type      "]
+	"linked_issue": ["", "JSXTransformer0.13changessourcemapreturntype"]
 }, {
 	"title": ["Shallow render components that define contextTypes"],
 	"id": ["#3716"],
-	"linked_issue": ["", "        Shallow renderer fails when component has ", "\n      "]
+	"linked_issue": ["", "Shallowrendererfailswhencomponenthas", "\n      "]
 }, {
 	"title": ["[performance] Inline ReactMultiChild.mountChildren"],
 	"id": ["#3717"],
@@ -14705,7 +14705,7 @@
 }, {
 	"title": ["Fix bad links in docs.  Fixes #3654."],
 	"id": ["#3723"],
-	"linked_issue": ["", "        Remove missing link.      "]
+	"linked_issue": ["", "Removemissinglink."]
 }, {
 	"title": ["FIXED SSL link to JSFiddle breaking dependencies"],
 	"id": ["#3724"],
@@ -14725,7 +14725,7 @@
 }, {
 	"title": ["Relax dangerouslySetInnerHTML validation"],
 	"id": ["#3727"],
-	"linked_issue": ["", "        Could ", " be ", " or ", "?\n      "]
+	"linked_issue": ["", "Could", " be ", " or ", "?\n      "]
 }, {
 	"title": [],
 	"id": [],
@@ -14849,7 +14849,7 @@
 }, {
 	"title": ["Add key warning to nested collections"],
 	"id": ["#3758"],
-	"linked_issue": ["", "        Nested arrays without key don't warn (anymore?)      "]
+	"linked_issue": ["", "Nestedarrayswithoutkeydon'twarn(anymore?)"]
 }, {
 	"title": ["Ensure grunt is available on $PATH"],
 	"id": ["#3759"],
@@ -14973,7 +14973,7 @@
 }, {
 	"title": ["Better invariant / warning replacement"],
 	"id": ["#3788"],
-	"linked_issue": ["", "        Replace invariant better in prod      "]
+	"linked_issue": ["", "Replaceinvariantbetterinprod"]
 }, {
 	"title": [],
 	"id": [],
@@ -15065,7 +15065,7 @@
 }, {
 	"title": ["IsMounted should always return a boolean."],
 	"id": ["#3815"],
-	"linked_issue": ["", "        isMounted() returns ", " instead of ", " when unmounted\n      "]
+	"linked_issue": ["", "isMounted()returns", " instead of ", " when unmounted\n      "]
 }, {
 	"title": ["fix option update. Fixes #2620"],
 	"id": ["#3817"],
@@ -15141,7 +15141,7 @@
 }, {
 	"title": ["Add support for unitless tabSize/tab-size"],
 	"id": ["#3831"],
-	"linked_issue": ["", "        ", " in ", " prop/attribute should be exempt from automatic ", " suffix\n      "]
+	"linked_issue": ["", "", " in ", " prop/attribute should be exempt from automatic ", " suffix\n      "]
 }, {
 	"title": ["polish some vendor sources"],
 	"id": ["#3833"],
@@ -15181,7 +15181,7 @@
 }, {
 	"title": ["Preserve prototype with replaceState"],
 	"id": ["#3841"],
-	"linked_issue": ["", "        replaceState throws away functions in 0.13      "]
+	"linked_issue": ["", "replaceStatethrowsawayfunctionsin0.13"]
 }, {
 	"title": ["added a warning when calling render() before body"],
 	"id": ["#3842"],
@@ -15205,7 +15205,7 @@
 }, {
 	"title": ["<option> added children flatten, & warn if invalid"],
 	"id": ["#3847"],
-	"linked_issue": ["", "        \"Unable to find element\" error on <option> elements      "]
+	"linked_issue": ["", "\"Unabletofindelement\"erroron<option>elements"]
 }, {
 	"title": [],
 	"id": [],
@@ -15293,7 +15293,7 @@
 }, {
 	"title": ["Clarify ReactElement prop validation message"],
 	"id": ["#3870"],
-	"linked_issue": ["", "        React.PropTypes.element message is unclear      "]
+	"linked_issue": ["", "React.PropTypes.elementmessageisunclear"]
 }, {
 	"title": ["Deprecate reactjs Google Group"],
 	"id": ["#3871"],
@@ -15453,7 +15453,7 @@
 }, {
 	"title": ["Clarify tutorial instructions"],
 	"id": ["#3910"],
-	"linked_issue": ["", "        Update Content in Docs on Tutorial code examples      "]
+	"linked_issue": ["", "UpdateContentinDocsonTutorialcodeexamples"]
 }, {
 	"title": [],
 	"id": [],
@@ -15501,7 +15501,7 @@
 }, {
 	"title": ["Fixed failing unit tests in browsers that don't support WebComponents"],
 	"id": ["#3923"],
-	"linked_issue": ["", "        Load webcomponents.js differently      "]
+	"linked_issue": ["", "Loadwebcomponents.jsdifferently"]
 }, {
 	"title": ["incrementing to the right version, from 0.13.2 to the current version"],
 	"id": ["#3924"],
@@ -15549,7 +15549,7 @@
 }, {
 	"title": ["Dedupe warnings in validateDOMNesting"],
 	"id": ["#3934"],
-	"linked_issue": ["", "        Dedupe warnings in validateDOMNesting      "]
+	"linked_issue": ["", "DedupewarningsinvalidateDOMNesting"]
 }, {
 	"title": ["Docs: value for ", " must be boolean"],
 	"id": ["#3935"],
@@ -15613,7 +15613,7 @@
 }, {
 	"title": ["Add capture to supported attributes"],
 	"id": ["#3950"],
-	"linked_issue": ["", "        Missing ", " attribute in ", "\n      "]
+	"linked_issue": ["", "Missing", " attribute in ", "\n      "]
 }, {
 	"title": [],
 	"id": [],
@@ -15677,11 +15677,11 @@
 }, {
 	"title": ["Added challenge, keyParams and keyType on <keygen>"],
 	"id": ["#3967"],
-	"linked_issue": ["", "        Missing \"challenge\" and \"keytype\" attributes for \"keygen\" tag      "]
+	"linked_issue": ["", "Missing\"challenge\"and\"keytype\"attributesfor\"keygen\"tag"]
 }, {
 	"title": ["Use babel-eslint and update eslint"],
 	"id": ["#3968"],
-	"linked_issue": ["", "        Upgrade eslint, use babel-eslint      "]
+	"linked_issue": ["", "Upgradeeslint,usebabel-eslint"]
 }, {
 	"title": [],
 	"id": [],
@@ -15737,11 +15737,11 @@
 }, {
 	"title": ["Revert links to non-https fiddles back to http in old blog posts"],
 	"id": ["#3980"],
-	"linked_issue": ["", "        reconciliation jsFiddle example not working.      "]
+	"linked_issue": ["", "reconciliationjsFiddleexamplenotworking."]
 }, {
 	"title": ["Always toLowerCase when comparing nodeName or tagName"],
 	"id": ["#3984"],
-	"linked_issue": ["", "        Controlled components don't work with xml      "]
+	"linked_issue": ["", "Controlledcomponentsdon'tworkwithxml"]
 }, {
 	"title": [],
 	"id": [],
@@ -15753,7 +15753,7 @@
 }, {
 	"title": ["Enable linting for __tests__"],
 	"id": ["#3985"],
-	"linked_issue": ["", "        Lint tests      "]
+	"linked_issue": ["", "Linttests"]
 }, {
 	"title": ["Troubleshooting documentation"],
 	"id": ["#3988"],
@@ -15981,7 +15981,7 @@
 }, {
 	"title": ["Update eslint-related dependencies"],
 	"id": ["#4040"],
-	"linked_issue": ["", "        3.1.10 and 3.1.11 fails to catch no-unused-vars      "]
+	"linked_issue": ["", "3.1.10and3.1.11failstocatchno-unused-vars"]
 }, {
 	"title": ["s/isomorphic/universal/g"],
 	"id": ["#4041"],
@@ -16017,7 +16017,7 @@
 }, {
 	"title": ["opt out of input events for ie 10 and 11"],
 	"id": ["#4051"],
-	"linked_issue": ["", "        Changing placeholder on <input> causes onChange in IE      "]
+	"linked_issue": ["", "Changingplaceholderon<input>causesonChangeinIE"]
 }, {
 	"title": [],
 	"id": [],
@@ -16065,7 +16065,7 @@
 }, {
 	"title": ["fix japanese docs permalinks"],
 	"id": ["#4063"],
-	"linked_issue": ["", "        Wrong html file name      "]
+	"linked_issue": ["", "Wronghtmlfilename"]
 }, {
 	"title": ["Add blessed entry points to isomorphic and dom"],
 	"id": ["#4064"],
@@ -16409,7 +16409,7 @@
 }, {
 	"title": ["Dont build jsxtransformer"],
 	"id": ["#4148"],
-	"linked_issue": ["", "        Stop building JSXTransformer      "]
+	"linked_issue": ["", "StopbuildingJSXTransformer"]
 }, {
 	"title": ["Make events propagate through shadow DOMs.\n"],
 	"id": ["#4150"],
@@ -16485,7 +16485,7 @@
 }, {
 	"title": ["Guard against a null node"],
 	"id": ["#4170"],
-	"linked_issue": ["", "        CSSTransitionGroup throws when a child returns null from render      "]
+	"linked_issue": ["", "CSSTransitionGroupthrowswhenachildreturnsnullfromrender"]
 }, {
 	"title": ["Simplified Life Cycles"],
 	"id": ["#4171"],
@@ -16517,7 +16517,7 @@
 }, {
 	"title": ["added owner in invalid style invariant error"],
 	"id": ["#4176"],
-	"linked_issue": ["", "        style prop error lacks context      "]
+	"linked_issue": ["", "styleproperrorlackscontext"]
 }, {
 	"title": [],
 	"id": [],
@@ -16837,7 +16837,7 @@
 }, {
 	"title": ["Add IE-only security attr to HTMLDOMPropertyConfig"],
 	"id": ["#4259"],
-	"linked_issue": ["", "        Support for iframe security attribute (IE)      "]
+	"linked_issue": ["", "Supportforiframesecurityattribute(IE)"]
 }, {
 	"title": [],
 	"id": [],
@@ -17497,7 +17497,7 @@
 }, {
 	"title": ["Fix switching between dangerouslySetInnerHTML and children"],
 	"id": ["#4427"],
-	"linked_issue": ["", "        Switching from dangerouslySetInnerHTML to children      "]
+	"linked_issue": ["", "SwitchingfromdangerouslySetInnerHTMLtochildren"]
 }, {
 	"title": [],
 	"id": [],
@@ -18473,7 +18473,7 @@
 }, {
 	"title": ["Ensure IE8 style expansion list is up to date"],
 	"id": ["#4665"],
-	"linked_issue": ["", "        Adding and then removing \"background\" from style attribute creates unwanted styles      "]
+	"linked_issue": ["", "Addingandthenremoving\"background\"fromstyleattributecreatesunwantedstyles"]
 }, {
 	"title": ["Add a simple production-mode sanity check test"],
 	"id": ["#4666"],
@@ -18737,7 +18737,7 @@
 }, {
 	"title": ["Better error for invalid element when shallow rendering"],
 	"id": ["#4735"],
-	"linked_issue": ["", "        Shallow rendering uses ", " and throws deprecations\n      "]
+	"linked_issue": ["", "Shallowrenderinguses", " and throws deprecations\n      "]
 }, {
 	"title": ["Update 02-displaying-data.ja-JP.md"],
 	"id": ["#4736"],
@@ -18785,7 +18785,7 @@
 }, {
 	"title": ["Don't crash in event handling when mixing React copies"],
 	"id": ["#4747"],
-	"linked_issue": ["", "        Running two copies of React on a page can give errors because both use ID '.0'      "]
+	"linked_issue": ["", "RunningtwocopiesofReactonapagecangiveerrorsbecausebothuseID'.0'"]
 }, {
 	"title": [],
 	"id": [],
@@ -19125,7 +19125,7 @@
 }, {
 	"title": ["Use a Symbol to tag every ReactElement"],
 	"id": ["#4832"],
-	"linked_issue": ["", "        How Much XSS Vulnerability Protection is React Responsible For?      "]
+	"linked_issue": ["", "HowMuchXSSVulnerabilityProtectionisReactResponsibleFor?"]
 }, {
 	"title": [],
 	"id": [],
@@ -19397,7 +19397,7 @@
 }, {
 	"title": ["Just ignore events on unmounted components"],
 	"id": ["#4903"],
-	"linked_issue": ["", "        RC1: Unexpected detached subtree found (possible regression?)      "]
+	"linked_issue": ["", "RC1:Unexpecteddetachedsubtreefound(possibleregression?)"]
 }, {
 	"title": [],
 	"id": [],
@@ -20577,7 +20577,7 @@
 }, {
 	"title": ["update enqueueCallback invariant to more specifically denote type of passed callback"],
 	"id": ["#5193"],
-	"linked_issue": ["", "        enqueueCallback invariant should specify/identify actual object in failure message      "]
+	"linked_issue": ["", "enqueueCallbackinvariantshouldspecify/identifyactualobjectinfailuremessage"]
 }, {
 	"title": ["Specify focus events work on all elements in the React DOM"],
 	"id": ["#5195"],
@@ -20781,7 +20781,7 @@
 }, {
 	"title": ["add default attribute for use with track element"],
 	"id": ["#5250"],
-	"linked_issue": ["", "        <track /> attributes support      "]
+	"linked_issue": ["", "<track/>attributessupport"]
 }, {
 	"title": ["[lint] Lock eslint version"],
 	"id": ["#5252"],
@@ -21393,7 +21393,7 @@
 }, {
 	"title": ["Improve npm packages' metadata"],
 	"id": ["#5396"],
-	"linked_issue": ["", "        Add ", " to addons' ", "\n      "]
+	"linked_issue": ["", "Add", " to addons' ", "\n      "]
 }, {
 	"title": ["Add support for SVG marker element"],
 	"id": ["#5398"],
@@ -21933,7 +21933,7 @@
 }, {
 	"title": ["Don't use ", " when defined on String, Number prototypes"],
 	"id": ["#5536"],
-	"linked_issue": ["", "        Unexpected string key handling      "]
+	"linked_issue": ["", "Unexpectedstringkeyhandling"]
 }, {
 	"title": ["Add highlight to a line of code to tutorial21.js"],
 	"id": ["#5539"],
@@ -22025,7 +22025,7 @@
 }, {
 	"title": ["shallow render: fix setState in componentWillMount"],
 	"id": ["#5561"],
-	"linked_issue": ["", "        calling setState on componentWillMount in Shallow Render results in TypeError: Cannot read property '_currentElement' of null      "]
+	"linked_issue": ["", "callingsetStateoncomponentWillMountinShallowRenderresultsinTypeError:Cannotreadproperty'_currentElement'ofnull"]
 }, {
 	"title": [],
 	"id": [],
@@ -22529,7 +22529,7 @@
 }, {
 	"title": ["Improve documentation for using React with Webpack"],
 	"id": ["#5686"],
-	"linked_issue": ["", "        Improve documentation for using React with Webpack      "]
+	"linked_issue": ["", "ImprovedocumentationforusingReactwithWebpack"]
 }, {
 	"title": ["normalize range input onChange events"],
 	"id": ["#5687"],
@@ -22757,7 +22757,7 @@
 }, {
 	"title": ["Warns on access of ", " and "],
 	"id": ["#5744"],
-	"linked_issue": ["", "        Warn on access of ", " and ", "\n      "]
+	"linked_issue": ["", "Warnonaccessof", " and ", "\n      "]
 }, {
 	"title": ["Only fire input value change events when the value changes"],
 	"id": ["#5746"],
@@ -23237,7 +23237,7 @@
 }, {
 	"title": ["Warn when an input switches between controlled and uncontrolled"],
 	"id": ["#5864"],
-	"linked_issue": ["", "        Warn when an input switches between controlled and uncontrolled      "]
+	"linked_issue": ["", "Warnwhenaninputswitchesbetweencontrolledanduncontrolled"]
 }, {
 	"title": ["update react example basic-jsx-precompile comand line"],
 	"id": ["#5865"],
@@ -23405,7 +23405,7 @@
 }, {
 	"title": ["Support Indeterminate checkboxes"],
 	"id": ["#5908"],
-	"linked_issue": ["", "        Add some way to specify indeterminate checkboxes      "]
+	"linked_issue": ["", "Addsomewaytospecifyindeterminatecheckboxes"]
 }, {
 	"title": [],
 	"id": [],
@@ -23609,7 +23609,7 @@
 }, {
 	"title": ["Fixes #5959 - jquery-bootstrap example uses handleHidden which does not exist"],
 	"id": ["#5961"],
-	"linked_issue": ["", "        jquery-bootstrap example uses ", " which does not exist\n      "]
+	"linked_issue": ["", "jquery-bootstrapexampleuses", " which does not exist\n      "]
 }, {
 	"title": ["Update 10.4-test-utils.md"],
 	"id": ["#5962"],
@@ -24261,7 +24261,7 @@
 }, {
 	"title": ["Disable ViewportMetrics unless MouseEvent lacks support for pageX/pageY"],
 	"id": ["#6129"],
-	"linked_issue": ["", "        React tracks scroll position internally and forces synchronous layout      "]
+	"linked_issue": ["", "Reacttracksscrollpositioninternallyandforcessynchronouslayout"]
 }, {
 	"title": [],
 	"id": [],
@@ -24397,7 +24397,7 @@
 }, {
 	"title": ["Don't set children attribute on SVG nodes"],
 	"id": ["#6164"],
-	"linked_issue": ["", "        SVG renders children=\"[Object object]\" into DOM      "]
+	"linked_issue": ["", "SVGrenderschildren=\"[Objectobject]\"intoDOM"]
 }, {
 	"title": [],
 	"id": [],
@@ -24541,7 +24541,7 @@
 }, {
 	"title": ["Reset Jest to use Jasmine1 so tests pass again"],
 	"id": ["#6199"],
-	"linked_issue": ["", "        Jasmine is broken      "]
+	"linked_issue": ["", "Jasmineisbroken"]
 }, {
 	"title": ["Update to jest 0.9.0."],
 	"id": ["#6200"],
@@ -24605,7 +24605,7 @@
 }, {
 	"title": ["Disabled inputs should not respond to clicks in IE"],
 	"id": ["#6215"],
-	"linked_issue": ["", "        Disabled input still clickable in IE11      "]
+	"linked_issue": ["", "DisabledinputstillclickableinIE11"]
 }, {
 	"title": [],
 	"id": [],
@@ -24681,7 +24681,7 @@
 }, {
 	"title": ["Fix ReactMarkupChecksum.addChecksumToMarkup() adds checksum to comments"],
 	"id": ["#6233"],
-	"linked_issue": ["", "        renderToString() fails to terminate comment node      "]
+	"linked_issue": ["", "renderToString()failstoterminatecommentnode"]
 }, {
 	"title": [],
 	"id": [],
@@ -24897,7 +24897,7 @@
 }, {
 	"title": ["Strip complex values from ReactPerf.printDOM() output"],
 	"id": ["#6289"],
-	"linked_issue": ["", "        ReactPerf.printDOM() throws \"Uncaught TypeError: Converting circular structure to JSON(\u2026)\"      "]
+	"linked_issue": ["", "ReactPerf.printDOM()throws\"UncaughtTypeError:ConvertingcircularstructuretoJSON(\u2026)\""]
 }, {
 	"title": [],
 	"id": [],
@@ -25037,7 +25037,7 @@
 }, {
 	"title": ["Fix ReactPerf.printOperations() test to work with createElement = false"],
 	"id": ["#6326"],
-	"linked_issue": ["", "        Strip complex values from ReactPerf.printDOM() output      "]
+	"linked_issue": ["", "StripcomplexvaluesfromReactPerf.printDOM()output"]
 }, {
 	"title": ["Updated react conf links"],
 	"id": ["#6330"],
@@ -25117,7 +25117,7 @@
 }, {
 	"title": ["Warning about unknown property happened when creating element"],
 	"id": ["#6345"],
-	"linked_issue": ["", "        Detect React DOM element with a wrong attribute name      "]
+	"linked_issue": ["", "DetectReactDOMelementwithawrongattributename"]
 }, {
 	"title": [],
 	"id": [],
@@ -25261,7 +25261,7 @@
 }, {
 	"title": ["Make sure simulated events don't warn when providing extra event properties"],
 	"id": ["#6380"],
-	"linked_issue": ["", "        ReactTestUtils.Simulate logs unexpected console error      "]
+	"linked_issue": ["", "ReactTestUtils.Simulatelogsunexpectedconsoleerror"]
 }, {
 	"title": [],
 	"id": [],
@@ -25369,7 +25369,7 @@
 }, {
 	"title": ["Attach displayName to the class methods"],
 	"id": ["#6404"],
-	"linked_issue": ["", "        Attach displayName to class methods      "]
+	"linked_issue": ["", "AttachdisplayNametoclassmethods"]
 }, {
 	"title": [],
 	"id": [],
@@ -25621,7 +25621,7 @@
 }, {
 	"title": ["Ensure validateDOMNesting catches nested body elements"],
 	"id": ["#6469"],
-	"linked_issue": ["", "        Server Rendering SVG foreignObject body tag w 15rc2 results in missing ID error      "]
+	"linked_issue": ["", "ServerRenderingSVGforeignObjectbodytagw15rc2resultsinmissingIDerror"]
 }, {
 	"title": [],
 	"id": [],
@@ -25801,7 +25801,7 @@
 }, {
 	"title": ["Ignore DOM writes outside the batch in ReactPerf"],
 	"id": ["#6516"],
-	"linked_issue": ["", "        ReactDefaultPerf.printWasted() doesn't work      "]
+	"linked_issue": ["", "ReactDefaultPerf.printWasted()doesn'twork"]
 }, {
 	"title": ["Reorder environments, as per zpao."],
 	"id": ["#6517"],
@@ -28213,7 +28213,7 @@
 }, {
 	"title": ["Fix renderSubtreeIntoContainer to update context"],
 	"id": ["#7125"],
-	"linked_issue": ["", "        context does not update using ", "\n      "]
+	"linked_issue": ["", "contextdoesnotupdateusing", "\n      "]
 }, {
 	"title": ["Fix tests from #6158 to use Jasmine 2"],
 	"id": ["#7126"],
@@ -29397,7 +29397,7 @@
 }, {
 	"title": ["dont mutate event type name, just pass it through"],
 	"id": ["#7419"],
-	"linked_issue": ["", "        Bug: ReactTestUtil.Simulate toLowerString mutating event type.      "]
+	"linked_issue": ["", "Bug:ReactTestUtil.SimulatetoLowerStringmutatingeventtype."]
 }, {
 	"title": ["Merge pull request #1 from facebook/master"],
 	"id": ["#7420"],
@@ -29457,7 +29457,7 @@
 }, {
 	"title": ["use Object.is for checking mutated children"],
 	"id": ["#7436"],
-	"linked_issue": ["", "        False-positive mutation warning      "]
+	"linked_issue": ["", "False-positivemutationwarning"]
 }, {
 	"title": [],
 	"id": [],
@@ -29885,7 +29885,7 @@
 }, {
 	"title": ["Ensure lifecycle timers are stopped on errors"],
 	"id": ["#7548"],
-	"linked_issue": ["", "        Did not expect componentDidMount timer to start while render timer is still in progress for another instance      "]
+	"linked_issue": ["", "DidnotexpectcomponentDidMounttimertostartwhilerendertimerisstillinprogressforanotherinstance"]
 }, {
 	"title": ["Show React events in the timeline when ReactPerf is active"],
 	"id": ["#7549"],
@@ -31025,7 +31025,7 @@
 }, {
 	"title": ["Fix UMD bundles, making safe to use as required modules"],
 	"id": ["#7840"],
-	"linked_issue": ["", "        Master UMD builds don\u2019t work as CommonJS using Webpack alias config      "]
+	"linked_issue": ["", "MasterUMDbuildsdon\u2019tworkasCommonJSusingWebpackaliasconfig"]
 }, {
 	"title": ["Update to Flow v0.33.0"],
 	"id": ["#7841"],
@@ -32657,7 +32657,7 @@
 }, {
 	"title": ["Replaced old refs with new callback refs"],
 	"id": ["#8254"],
-	"linked_issue": ["", "        Documentation: Sample is still using string refs      "]
+	"linked_issue": ["", "Documentation:Sampleisstillusingstringrefs"]
 }, {
 	"title": ["Revert temporary compatibility fixes for Devtool -> Hook"],
 	"id": ["#8256"],
@@ -35213,7 +35213,7 @@
 }, {
 	"title": ["Refer to object by name instead of function call context"],
 	"id": ["#8892"],
-	"linked_issue": ["", "        Usage of ", " in DOMPropertyOperations module breaks build in Closure Compiler under advanced optimizations\n      "]
+	"linked_issue": ["", "Usageof", " in DOMPropertyOperations module breaks build in Closure Compiler under advanced optimizations\n      "]
 }, {
 	"title": ["Add process.cwd to the test process shim"],
 	"id": ["#8893"],
@@ -36457,7 +36457,7 @@
 }, {
 	"title": ["[WIP] Bugfix for invokeGuardedCallback"],
 	"id": ["#9210"],
-	"linked_issue": ["", "        [Fiber] Missing error causes an infinite loop      "]
+	"linked_issue": ["", "[Fiber]Missingerrorcausesaninfiniteloop"]
 }, {
 	"title": ["Docs: Use single quotes, remove extra whitespace"],
 	"id": ["#9215"],
@@ -36565,7 +36565,7 @@
 }, {
 	"title": ["Add warning about overwriting React component's instance property "],
 	"id": ["#9236"],
-	"linked_issue": ["", "        Warn about overwriting React component's instance property ", "\n      "]
+	"linked_issue": ["", "WarnaboutoverwritingReactcomponent'sinstanceproperty", "\n      "]
 }, {
 	"title": [],
 	"id": [],
@@ -36681,7 +36681,7 @@
 }, {
 	"title": ["Add a button to switch from Fiber with time-slicing to Fiber without it in Triangles Demo"],
 	"id": ["#9262"],
-	"linked_issue": ["", "        Adds a Stack-based Sierpinski triangle demo to compare with Fiber ", "\n      "]
+	"linked_issue": ["", "AddsaStack-basedSierpinskitriangledemotocomparewithFiber", "\n      "]
 }, {
 	"title": ["Adding SSR test for form fields."],
 	"id": ["#9264"],
@@ -36917,7 +36917,7 @@
 }, {
 	"title": ["Convert current build system to Rollup and adopt flat bundles"],
 	"id": ["#9327"],
-	"linked_issue": ["", "        Bundle React into a flat file      "]
+	"linked_issue": ["", "BundleReactintoaflatfile"]
 }, {
 	"title": ["Docs: Clarification of setState() behavior"],
 	"id": ["#9329"],
@@ -38585,7 +38585,7 @@
 }, {
 	"title": ["Update docs to pass updater functions to .setState()"],
 	"id": ["#9748"],
-	"linked_issue": ["", "        Functional .setState() as default in docs, tutorials and first steps guides      "]
+	"linked_issue": ["", "Functional.setState()asdefaultindocs,tutorialsandfirststepsguides"]
 }, {
 	"title": ["Add Videos link to React Europe 2017"],
 	"id": ["#9751"],
@@ -39129,7 +39129,7 @@
 }, {
 	"title": ["Add onBailout hook to React DevTools"],
 	"id": ["#9883"],
-	"linked_issue": ["", "        Does \"Trace React Updates\" respect shouldComponentUpdate short-circuits?      "]
+	"linked_issue": ["", "Does\"TraceReactUpdates\"respectshouldComponentUpdateshort-circuits?"]
 }, {
 	"title": ["Fix a bug with memoizedState affecting React DevTools"],
 	"id": ["#9886"],
@@ -43449,7 +43449,7 @@
 }, {
 	"title": ["Fix build on windows"],
 	"id": ["#10981"],
-	"linked_issue": ["", "        Build Error: not found the fbjs\\lib\\warning      "]
+	"linked_issue": ["", "BuildError:notfoundthefbjs\\lib\\warning"]
 }, {
 	"title": ["Fix build on window"],
 	"id": ["#10982"],
@@ -43997,7 +43997,7 @@
 }, {
 	"title": ["Move RAF check to first render()"],
 	"id": ["#11117"],
-	"linked_issue": ["", "        Check for rAF polyfill lazily      "]
+	"linked_issue": ["", "CheckforrAFpolyfilllazily"]
 }, {
 	"title": ["Ignore CR/LF differences when warning about markup mismatch"],
 	"id": ["#11119"],
@@ -44177,7 +44177,7 @@
 }, {
 	"title": ["Fix incorrect calculation of onMouseEnter/Leave component path"],
 	"id": ["#11164"],
-	"linked_issue": ["", "        In React 16, onMouseEnter is triggered an extra time when entering a new child      "]
+	"linked_issue": ["", "InReact16,onMouseEnteristriggeredanextratimewhenenteringanewchild"]
 }, {
 	"title": ["Shallow renderer: support multiple ", " invocation"],
 	"id": ["#11167"],
@@ -47565,7 +47565,7 @@
 }, {
 	"title": ["Output JUnit XML metadata for CircleCi"],
 	"id": ["#12023"],
-	"linked_issue": ["", "        Output JUnit XML test metadata for CircleCI      "]
+	"linked_issue": ["", "OutputJUnitXMLtestmetadataforCircleCI"]
 }, {
 	"title": [],
 	"id": [],
@@ -47709,7 +47709,7 @@
 }, {
 	"title": ["Improve display of filenames in component stack"],
 	"id": ["#12059"],
-	"linked_issue": ["", "        __source makes component stack less useful      "]
+	"linked_issue": ["", "__sourcemakescomponentstacklessuseful"]
 }, {
 	"title": ["Warn if unsafe lifecycle methods are found in an async subtree"],
 	"id": ["#12060"],
@@ -47717,7 +47717,7 @@
 }, {
 	"title": ["DOM diff and component stack in SSR hydrate mismatch warnings (#10085)"],
 	"id": ["#12063"],
-	"linked_issue": ["", "        Nicer Formatting of SSR Validation      "]
+	"linked_issue": ["", "NicerFormattingofSSRValidation"]
 }, {
 	"title": [],
 	"id": [],
@@ -49273,7 +49273,7 @@
 }, {
 	"title": ["Fix 9402"],
 	"id": ["#12451"],
-	"linked_issue": ["", "        A number input will always have left pad 0 though parseFloat value in onChange      "]
+	"linked_issue": ["", "Anumberinputwillalwayshaveleftpad0thoughparseFloatvalueinonChange"]
 }, {
 	"title": [],
 	"id": [],
@@ -49485,7 +49485,7 @@
 }, {
 	"title": ["Fix IE9 Undo Bug"],
 	"id": ["#12505"],
-	"linked_issue": ["", "        Undo operation on text input throws exception in IE9      "]
+	"linked_issue": ["", "UndooperationontextinputthrowsexceptioninIE9"]
 }, {
 	"title": [],
 	"id": [],
@@ -50341,7 +50341,7 @@
 }, {
 	"title": ["Password inputs do not synchronize the value attribute"],
 	"id": ["#12722"],
-	"linked_issue": ["", "        Stop syncing value attribute for controlled inputs      "]
+	"linked_issue": ["", "Stopsyncingvalueattributeforcontrolledinputs"]
 }, {
 	"title": [],
 	"id": [],
@@ -69113,7 +69113,7 @@
 }, {
 	"title": ["Fixed changelog formatting"],
 	"id": ["#17487"],
-	"linked_issue": ["", "        Changelog markdown formatting issue for v16.3.0 (React Test Renderer)      "]
+	"linked_issue": ["", "Changelogmarkdownformattingissueforv16.3.0(ReactTestRenderer)"]
 }, {
 	"title": [],
 	"id": [],
@@ -72065,7 +72065,7 @@
 }, {
 	"title": ["[DevTools] Add shortcut keys for tab switching"],
 	"id": ["#18248"],
-	"linked_issue": ["", "        DevTools: Add shortcut keys for standalone version      "]
+	"linked_issue": ["", "DevTools:Addshortcutkeysforstandaloneversion"]
 }, {
 	"title": ["feat(devtools): Allow editing context value in Provider"],
 	"id": ["#18255"],
@@ -72213,7 +72213,7 @@
 }, {
 	"title": ["Add KeyboardEvent.code to synthetic event"],
 	"id": ["#18287"],
-	"linked_issue": ["", "        Synthetic KeyboardEvent should support KeyboardEvent.code      "]
+	"linked_issue": ["", "SyntheticKeyboardEventshouldsupportKeyboardEvent.code"]
 }, {
 	"title": [],
 	"id": [],
@@ -72777,7 +72777,7 @@
 }, {
 	"title": ["feat(StrictMode): Double-invoke render for every component"],
 	"id": ["#18430"],
-	"linked_issue": ["", "        Call all functions twice in StrictMode      "]
+	"linked_issue": ["", "CallallfunctionstwiceinStrictMode"]
 }, {
 	"title": ["fix: Prevent crash when resuming class component inside SuspenseList"],
 	"id": ["#18432"],
@@ -73129,7 +73129,7 @@
 }, {
 	"title": ["Clear finished discrete updates during commit phase"],
 	"id": ["#18515"],
-	"linked_issue": ["", "        Bug: event.preventDefault is wrecking havoc with startTransition      "]
+	"linked_issue": ["", "Bug:event.preventDefaultiswreckinghavocwithstartTransition"]
 }, {
 	"title": [],
 	"id": [],
@@ -73233,7 +73233,7 @@
 }, {
 	"title": ["Fix bailout broken in lazy components due to default props resolving"],
 	"id": ["#18539"],
-	"linked_issue": ["", "        Bailing out doesn't work properly in lazy components with default props      "]
+	"linked_issue": ["", "Bailingoutdoesn'tworkproperlyinlazycomponentswithdefaultprops"]
 }, {
 	"title": ["Revert \"Revert \"Refactor commitPlacement to recursively insert nodes (#17996)\"\""],
 	"id": ["#18540"],
@@ -73389,7 +73389,7 @@
 }, {
 	"title": ["Add keyboard navigation to fibre info sidebar"],
 	"id": ["#18584"],
-	"linked_issue": ["", "        DevTools: Switch between \"Rendered At\" renders using keyboard arrow keys      "]
+	"linked_issue": ["", "DevTools:Switchbetween\"RenderedAt\"rendersusingkeyboardarrowkeys"]
 }, {
 	"title": ["Migrate conditional tests to gate pragma"],
 	"id": ["#18585"],
@@ -73397,7 +73397,7 @@
 }, {
 	"title": ["DevTools: Switch between \"Rendered At\" renders using keyboard arrow keys"],
 	"id": ["#18586"],
-	"linked_issue": ["", "        DevTools: Switch between \"Rendered At\" renders using keyboard arrow keys      "]
+	"linked_issue": ["", "DevTools:Switchbetween\"RenderedAt\"rendersusingkeyboardarrowkeys"]
 }, {
 	"title": [],
 	"id": [],
@@ -73757,7 +73757,7 @@
 }, {
 	"title": ["Warn when textarea switches between controlled and uncontrolled"],
 	"id": ["#18681"],
-	"linked_issue": ["", "        textarea does not show warning when switching from uncontrolled to controlled like inputs do      "]
+	"linked_issue": ["", "textareadoesnotshowwarningwhenswitchingfromuncontrolledtocontrolledlikeinputsdo"]
 }, {
 	"title": [],
 	"id": [],
@@ -73977,7 +73977,7 @@
 }, {
 	"title": ["Devtools: Show inspectedElement ", " in right pane"],
 	"id": ["#18737"],
-	"linked_issue": ["", "        Improve UX of finding full ", " value\n      "]
+	"linked_issue": ["", "ImproveUXoffindingfull", " value\n      "]
 }, {
 	"title": ["SuspenseList: Reschedule continuation at same priority"],
 	"id": ["#18738"],
@@ -74005,7 +74005,7 @@
 }, {
 	"title": ["[DevTools] Add Component Highlighting to Profiler"],
 	"id": ["#18745"],
-	"linked_issue": ["", "        Profiler should highlight host components (e.g. DOM elements) on mouseover      "]
+	"linked_issue": ["", "Profilershouldhighlighthostcomponents(e.g.DOMelements)onmouseover"]
 }, {
 	"title": ["DevTools: Keyboard arrow-key navigation for the flamegraph view"],
 	"id": ["#18746"],
@@ -74077,7 +74077,7 @@
 }, {
 	"title": ["Drop generated files (dist) from source tree (src is enough to build)"],
 	"id": ["#18763"],
-	"linked_issue": ["", "        Bug: generated files in source tree for react-window node module      "]
+	"linked_issue": ["", "Bug:generatedfilesinsourcetreeforreact-windownodemodule"]
 }, {
 	"title": [],
 	"id": [],
@@ -74101,7 +74101,7 @@
 }, {
 	"title": ["useMutableSource hydration support"],
 	"id": ["#18771"],
-	"linked_issue": ["", "        useMutableSource and hydration      "]
+	"linked_issue": ["", "useMutableSourceandhydration"]
 }, {
 	"title": ["[DevTools] enable Electron interactions on Linux & auto copy script tags"],
 	"id": ["#18772"],
@@ -74469,7 +74469,7 @@
 }, {
 	"title": ["Disable Profiler commit filtering"],
 	"id": ["#18862"],
-	"linked_issue": ["", "        Error: \"Cannot read property 'duration' of undefined\"      "]
+	"linked_issue": ["", "Error:\"Cannotreadproperty'duration'ofundefined\""]
 }, {
 	"title": ["[Blocks] Scaffolding react-fetch + first pass at node implementation"],
 	"id": ["#18863"],
@@ -74529,7 +74529,7 @@
 }, {
 	"title": ["Fix Profiler root change error"],
 	"id": ["#18880"],
-	"linked_issue": ["", "        DevTools Profiler: \"Could not find commit data for root \u2026\"      "]
+	"linked_issue": ["", "DevToolsProfiler:\"Couldnotfindcommitdataforroot\u2026\""]
 }, {
 	"title": ["Added clear message for functional component starting with lowercase"],
 	"id": ["#18881"],
@@ -74981,7 +74981,7 @@
 }, {
 	"title": ["[DevTools] Add DevTools forked Feature flags"],
 	"id": ["#18994"],
-	"linked_issue": ["", "        \"Pause on caught exceptions\" enabled always breaks on this line      "]
+	"linked_issue": ["", "\"Pauseoncaughtexceptions\"enabledalwaysbreaksonthisline"]
 }, {
 	"title": [],
 	"id": [],
@@ -75205,7 +75205,7 @@
 }, {
 	"title": ["DevTools: Add break-on-warn feature"],
 	"id": ["#19048"],
-	"linked_issue": ["", "        [DevTools Feature Request] Break on Warnings      "]
+	"linked_issue": ["", "[DevToolsFeatureRequest]BreakonWarnings"]
 }, {
 	"title": [],
 	"id": [],
@@ -75337,7 +75337,7 @@
 }, {
 	"title": ["Allowing <kbd> tag"],
 	"id": ["#19086"],
-	"linked_issue": ["", "        Bug: Warning: The tag <kbd> is unrecognized in this browser      "]
+	"linked_issue": ["", "Bug:Warning:Thetag<kbd>isunrecognizedinthisbrowser"]
 }, {
 	"title": [],
 	"id": [],
@@ -75857,7 +75857,7 @@
 }, {
 	"title": ["Fix development mode hang when iframe is removed"],
 	"id": ["#19220"],
-	"linked_issue": ["", "        window.print() crashes if a 'print' event listener causes a rerender (Chrome, DEV-mode only)      "]
+	"linked_issue": ["", "window.print()crashesifa'print'eventlistenercausesarerender(Chrome,DEV-modeonly)"]
 }, {
 	"title": ["Modern Event System: make on*Capture events use capture phase"],
 	"id": ["#19221"],
@@ -76109,7 +76109,7 @@
 }, {
 	"title": ["[DevTools] Show HOC names in profiler"],
 	"id": ["#19283"],
-	"linked_issue": ["", "        Suggestion: show HOC names in profiler      "]
+	"linked_issue": ["", "Suggestion:showHOCnamesinprofiler"]
 }, {
 	"title": ["Use a custom jsdom fork"],
 	"id": ["#19284"],
@@ -76157,15 +76157,15 @@
 }, {
 	"title": ["Fixed test script for DevTools config"],
 	"id": ["#19294"],
-	"linked_issue": ["", "        DevTools test script runs the wrong tests      "]
+	"linked_issue": ["", "DevToolstestscriptrunsthewrongtests"]
 }, {
 	"title": ["Fixed test script for DevTools build config"],
 	"id": ["#19295"],
-	"linked_issue": ["", "        DevTools test script runs the wrong tests      "]
+	"linked_issue": ["", "DevToolstestscriptrunsthewrongtests"]
 }, {
 	"title": ["DevTools 4.7.0 -> 4.8.0"],
 	"id": ["#19297"],
-	"linked_issue": ["", "        ", " cannot install a temporary add-on with FF Nightly (build >= 2020-04-14)\n      "]
+	"linked_issue": ["", "", " cannot install a temporary add-on with FF Nightly (build >= 2020-04-14)\n      "]
 }, {
 	"title": ["Alter event replaying strategy for target only events"],
 	"id": ["#19300"],
@@ -76197,7 +76197,7 @@
 }, {
 	"title": ["DevTools: Make break-on-warn off by default"],
 	"id": ["#19309"],
-	"linked_issue": ["", "        Bug: Unexpected debugger statement in DevTools (solved)      "]
+	"linked_issue": ["", "Bug:UnexpecteddebuggerstatementinDevTools(solved)"]
 }, {
 	"title": [],
 	"id": [],
@@ -76249,7 +76249,7 @@
 }, {
 	"title": ["reference not add to dependencies if only its type is used as typeof arg"],
 	"id": ["#19316"],
-	"linked_issue": ["", "        Bug [ESLint Hooks Plugin]: When using a ", " type guard it requires the value as a dependency\n      "]
+	"linked_issue": ["", "Bug[ESLintHooksPlugin]:Whenusinga", " type guard it requires the value as a dependency\n      "]
 }, {
 	"title": ["Fixed some minor Typos"],
 	"id": ["#19317"],
@@ -76257,7 +76257,7 @@
 }, {
 	"title": ["fix(act): Don't warn if an effect was not queued"],
 	"id": ["#19319"],
-	"linked_issue": ["", "        Bug: act warning misleading if an effect wasn't run      "]
+	"linked_issue": ["", "Bug:actwarningmisleadingifaneffectwasn'trun"]
 }, {
 	"title": ["chore: Build react-dom/test-utils in codesandbox deploy"],
 	"id": ["#19321"],
@@ -76433,7 +76433,7 @@
 }, {
 	"title": ["Fix Suspense-wrapping heuristic"],
 	"id": ["#19368"],
-	"linked_issue": ["", "        Error: \"Commit tree does not contain fiber 256. This is a bug in React DevTools.\"      "]
+	"linked_issue": ["", "Error:\"Committreedoesnotcontainfiber256.ThisisabuginReactDevTools.\""]
 }, {
 	"title": ["Disable DevTools minification"],
 	"id": ["#19369"],
@@ -76473,7 +76473,7 @@
 }, {
 	"title": ["Fix Suspense-wrapping heuristic (and bump version numbers)"],
 	"id": ["#19373"],
-	"linked_issue": ["", "        Error: \"Commit tree does not contain fiber 256. This is a bug in React DevTools.\"      "]
+	"linked_issue": ["", "Error:\"Committreedoesnotcontainfiber256.ThisisabuginReactDevTools.\""]
 }, {
 	"title": ["Effects list refactor continued: passive effects traversal"],
 	"id": ["#19374"],
@@ -77249,7 +77249,7 @@
 }, {
 	"title": ["Fix double-firing mouseenter"],
 	"id": ["#19571"],
-	"linked_issue": ["", "        Bug: mouseEnter fires twice in react@next      "]
+	"linked_issue": ["", "Bug:mouseEnterfirestwiceinreact@next"]
 }, {
 	"title": [],
 	"id": [],
@@ -77389,7 +77389,7 @@
 }, {
 	"title": ["Fix emoji character displayed in Chrome extension"],
 	"id": ["#19603"],
-	"linked_issue": ["", "        Chrome DevTools tab icon doesn't match screenshots on webstore      "]
+	"linked_issue": ["", "ChromeDevToolstabicondoesn'tmatchscreenshotsonwebstore"]
 }, {
 	"title": ["Remove wasteful checks from "],
 	"id": ["#19604"],
@@ -77417,7 +77417,7 @@
 }, {
 	"title": ["fix: leak strict mode with UMD builds"],
 	"id": ["#19614"],
-	"linked_issue": ["", "        Bug: 'use strict' at global level causes issues with scripts concatenation.      "]
+	"linked_issue": ["", "Bug:'usestrict'atgloballevelcausesissueswithscriptsconcatenation."]
 }, {
 	"title": [],
 	"id": [],
@@ -77521,7 +77521,7 @@
 }, {
 	"title": ["fix: property list values should show whitespace"],
 	"id": ["#19640"],
-	"linked_issue": ["", "        Bug: Property list does not render repeated spaces properly.      "]
+	"linked_issue": ["", "Bug:Propertylistdoesnotrenderrepeatedspacesproperly."]
 }, {
 	"title": [],
 	"id": [],
@@ -77685,7 +77685,7 @@
 }, {
 	"title": ["Fixes eslint warning when node type is ChainExpression"],
 	"id": ["#19680"],
-	"linked_issue": ["", "        Bug: eslint-plugin-react-hooks optional chaining in deps      "]
+	"linked_issue": ["", "Bug:eslint-plugin-react-hooksoptionalchainingindeps"]
 }, {
 	"title": [],
 	"id": [],
@@ -77729,7 +77729,7 @@
 }, {
 	"title": ["Scheduling Profiler: Add How-To, loader & some UI tweaks"],
 	"id": ["#19690"],
-	"linked_issue": ["", "        Bug: Broken Scheduling Profiler landing styles      "]
+	"linked_issue": ["", "Bug:BrokenSchedulingProfilerlandingstyles"]
 }, {
 	"title": ["Enable building of DevTools and scheduling profiler in CI"],
 	"id": ["#19691"],
@@ -77833,7 +77833,7 @@
 }, {
 	"title": ["Add checkbox toggle for boolean values"],
 	"id": ["#19714"],
-	"linked_issue": ["", "        Add a toggle for Boolean props in DevTools      "]
+	"linked_issue": ["", "AddatoggleforBooleanpropsinDevTools"]
 }, {
 	"title": ["Enable eager listeners in open source"],
 	"id": ["#19716"],
@@ -77845,7 +77845,7 @@
 }, {
 	"title": ["Remove config argument from useTransition"],
 	"id": ["#19719"],
-	"linked_issue": ["", "        useTransition's startTransition function can result in infinite loop when it's included as a useEffect dependency      "]
+	"linked_issue": ["", "useTransition'sstartTransitionfunctioncanresultininfiniteloopwhenit'sincludedasauseEffectdependency"]
 }, {
 	"title": ["[exhaustive-deps] Add ", " as a known stable method"],
 	"id": ["#19720"],
@@ -77897,7 +77897,7 @@
 }, {
 	"title": ["Fix instances of function declaration after return"],
 	"id": ["#19733"],
-	"linked_issue": ["", "        Enable a lint rule not to define after return and fix existing callsites      "]
+	"linked_issue": ["", "Enablealintrulenottodefineafterreturnandfixexistingcallsites"]
 }, {
 	"title": [],
 	"id": [],
@@ -77965,7 +77965,7 @@
 }, {
 	"title": ["eslint-plugin-react-hooks: fix compatibility with @typescript-eslint/parser@4.0.0+"],
 	"id": ["#19751"],
-	"linked_issue": ["", "        Bug: Types incorrectly identified as missing dependencies for ", " with ", "\n      "]
+	"linked_issue": ["", "Bug:Typesincorrectlyidentifiedasmissingdependenciesfor", " with ", "\n      "]
 }, {
 	"title": ["Bugfix: Effect clean up when deleting suspended tree"],
 	"id": ["#19752"],
@@ -78289,7 +78289,7 @@
 }, {
 	"title": ["Rename from iterator to iterable and split the functionality"],
 	"id": ["#19831"],
-	"linked_issue": ["", "        Bug: DevTools calls arbitrary generators which may be stateful      "]
+	"linked_issue": ["", "Bug:DevToolscallsarbitrarygeneratorswhichmaybestateful"]
 }, {
 	"title": ["Fix ", " bundle size regression"],
 	"id": ["#19832"],
@@ -79105,7 +79105,7 @@
 }, {
 	"title": ["Remove unstable scheduler/tracing API"],
 	"id": ["#20037"],
-	"linked_issue": ["", "        Delete unstable scheduler/tracing entry point      "]
+	"linked_issue": ["", "Deleteunstablescheduler/tracingentrypoint"]
 }, {
 	"title": ["Don't visit passive effects during \"before mutation\" phase"],
 	"id": ["#20038"],
@@ -79221,7 +79221,7 @@
 }, {
 	"title": ["Remove usage of Array#fill to fix IE11"],
 	"id": ["#20071"],
-	"linked_issue": ["", "        react-dom 17 breaks on internet explorer      "]
+	"linked_issue": ["", "react-dom17breaksoninternetexplorer"]
 }, {
 	"title": [],
 	"id": [],
@@ -79305,7 +79305,7 @@
 }, {
 	"title": ["Fix muted prop not being shown as an attribute for video elements"],
 	"id": ["#20087"],
-	"linked_issue": ["", "        <video /> attribute needed but not guaranteed by React      "]
+	"linked_issue": ["", "<video/>attributeneededbutnotguaranteedbyReact"]
 }, {
 	"title": [],
 	"id": [],
@@ -79465,7 +79465,7 @@
 }, {
 	"title": ["Fast Refresh: Don't block DevTools commit hook"],
 	"id": ["#20129"],
-	"linked_issue": ["", "        Bug: DevTools not finding/showing React components      "]
+	"linked_issue": ["", "Bug:DevToolsnotfinding/showingReactcomponents"]
 }, {
 	"title": [],
 	"id": [],
@@ -79849,7 +79849,7 @@
 }, {
 	"title": ["Widen peer dependency range of use-subscription"],
 	"id": ["#20225"],
-	"linked_issue": ["", "        Bug: Peer dependency change between use-subscription 1.4.1 and 1.5.0      "]
+	"linked_issue": ["", "Bug:Peerdependencychangebetweenuse-subscription1.4.1and1.5.0"]
 }, {
 	"title": ["Update CONTRIBUTING.md "],
 	"id": ["#20226"],
@@ -80189,7 +80189,7 @@
 }, {
 	"title": ["Issue 20262: eslint exhaustive-deps fix for undefined dependencies"],
 	"id": ["#20310"],
-	"linked_issue": ["", "        Bug: react-hooks/exhaustive-deps false postive when given undefined as deps      "]
+	"linked_issue": ["", "Bug:react-hooks/exhaustive-depsfalsepostivewhengivenundefinedasdeps"]
 }, {
 	"title": [],
 	"id": [],
@@ -80337,7 +80337,7 @@
 }, {
 	"title": ["Add a single iteration object returned to the callback function to flatten it further #20349"],
 	"id": ["#20350"],
-	"linked_issue": ["", "        The interface(Children.map) has no iteration object returned by the recursive call function      "]
+	"linked_issue": ["", "Theinterface(Children.map)hasnoiterationobjectreturnedbytherecursivecallfunction"]
 }, {
 	"title": ["fixed typo"],
 	"id": ["#20351"],
@@ -80461,7 +80461,7 @@
 }, {
 	"title": ["Fix ESLint crash on empty react effect hook"],
 	"id": ["#20385"],
-	"linked_issue": ["", "        [eslint-plugin-react-hooks] Bug: ESLint crashes if there's a ", " / ", " invocation without any arguments.\n      "]
+	"linked_issue": ["", "[eslint-plugin-react-hooks]Bug:ESLintcrashesifthere'sa", " / ", " invocation without any arguments.\n      "]
 }, {
 	"title": ["Optimizing part of the PureConponent code"],
 	"id": ["#20386"],
@@ -80893,7 +80893,7 @@
 }, {
 	"title": ["[devtools] Bump electron version from 9.1.0 to 11.1.0 for darwin-arm64 builds"],
 	"id": ["#20496"],
-	"linked_issue": ["", "        React DevTools should bump the Electron version to 11.0.1 for darwin-arm64 builds      "]
+	"linked_issue": ["", "ReactDevToolsshouldbumptheElectronversionto11.0.1fordarwin-arm64builds"]
 }, {
 	"title": [],
 	"id": [],
@@ -80969,7 +80969,7 @@
 }, {
 	"title": ["Add option to ignore stable hooks from eslint-exhaustive-deps rule"],
 	"id": ["#20513"],
-	"linked_issue": ["", "        [eslint-plugin-react-hooks] allow configuring custom hooks as \"static\"      "]
+	"linked_issue": ["", "[eslint-plugin-react-hooks]allowconfiguringcustomhooksas\"static\""]
 }, {
 	"title": [],
 	"id": [],
@@ -81381,7 +81381,7 @@
 }, {
 	"title": ["Avoid .valueOf to close #20594"],
 	"id": ["#20617"],
-	"linked_issue": ["", "        Bug: unintended .valueOf() maybe?      "]
+	"linked_issue": ["", "Bug:unintended.valueOf()maybe?"]
 }, {
 	"title": ["Use toMatchInlineSnapshot for dehydrated values"],
 	"id": ["#20618"],
@@ -81585,7 +81585,7 @@
 }, {
 	"title": ["Improve error message when mutable sources are mutated during render"],
 	"id": ["#20665"],
-	"linked_issue": ["", "        Bug: unstable_useMutableSource throws error when mutated before subscribe      "]
+	"linked_issue": ["", "Bug:unstable_useMutableSourcethrowserrorwhenmutatedbeforesubscribe"]
 }, {
 	"title": ["32"],
 	"id": ["#20666"],
@@ -81625,7 +81625,7 @@
 }, {
 	"title": ["fix: don't run effects if a render phase update results in unchanged deps"],
 	"id": ["#20676"],
-	"linked_issue": ["", "        Bug: FunctionComponent re-render phase cause a bug      "]
+	"linked_issue": ["", "Bug:FunctionComponentre-renderphasecauseabug"]
 }, {
 	"title": ["Update README.md"],
 	"id": ["#20677"],
@@ -81653,7 +81653,7 @@
 }, {
 	"title": ["DevTools: Patch console methods even when only show-inline-warnings/errors enabled"],
 	"id": ["#20688"],
-	"linked_issue": ["", "        DevTools: Make sure inline warnings feature works even if append stacks is disabled      "]
+	"linked_issue": ["", "DevTools:Makesureinlinewarningsfeatureworksevenifappendstacksisdisabled"]
 }, {
 	"title": [],
 	"id": [],
@@ -82125,7 +82125,7 @@
 }, {
 	"title": ["Add Lane labels to scheduling profiler marks"],
 	"id": ["#20808"],
-	"linked_issue": ["", "        Scheduling profiler: Unrecognized event type from Chrome Canary      "]
+	"linked_issue": ["", "Schedulingprofiler:UnrecognizedeventtypefromChromeCanary"]
 }, {
 	"title": ["Add ", " to the host config"],
 	"id": ["#20809"],
@@ -82149,7 +82149,7 @@
 }, {
 	"title": ["Add warning about hydration mismatch on defaultChecked prop"],
 	"id": ["#20815"],
-	"linked_issue": ["", "        Bug: Server hydration mistmatch and radio group with defaultChecked      "]
+	"linked_issue": ["", "Bug:ServerhydrationmistmatchandradiogroupwithdefaultChecked"]
 }, {
 	"title": ["Update package.json"],
 	"id": ["#20816"],
@@ -82489,7 +82489,7 @@
 }, {
 	"title": ["Nested opaque identifier"],
 	"id": ["#20896"],
-	"linked_issue": ["", "        Feat: Some type of way to merge key prop and useOpaqueIdentifier result       "]
+	"linked_issue": ["", "Feat:SometypeofwaytomergekeypropanduseOpaqueIdentifierresult"]
 }, {
 	"title": [],
 	"id": [],
@@ -82545,7 +82545,7 @@
 }, {
 	"title": ["Handle case where hook callback is a CallExpression"],
 	"id": ["#20913"],
-	"linked_issue": ["", "        Bug: ESLint react-hooks/exhaustive-deps false positive on useCallback wrapped in function defined outside component scope      "]
+	"linked_issue": ["", "Bug:ESLintreact-hooks/exhaustive-depsfalsepositiveonuseCallbackwrappedinfunctiondefinedoutsidecomponentscope"]
 }, {
 	"title": ["Add unstable_strictModeLevel to test renderer"],
 	"id": ["#20914"],
@@ -82629,7 +82629,7 @@
 }, {
 	"title": ["adds a tab to the components view to show a summary of component instances"],
 	"id": ["#20936"],
-	"linked_issue": ["", "        Component summary view by type      "]
+	"linked_issue": ["", "Componentsummaryviewbytype"]
 }, {
 	"title": [],
 	"id": [],
@@ -82793,7 +82793,7 @@
 }, {
 	"title": ["Flip tuple order of useTransition"],
 	"id": ["#20976"],
-	"linked_issue": ["", "        Unexpected value order with useTransition      "]
+	"linked_issue": ["", "UnexpectedvalueorderwithuseTransition"]
 }, {
 	"title": ["Stop tracking roots with pending discrete updates"],
 	"id": ["#20978"],
@@ -83185,7 +83185,7 @@
 }, {
 	"title": ["Add pointerenter/leave priorities"],
 	"id": ["#21077"],
-	"linked_issue": ["", "        Add Priorities for All Event Types      "]
+	"linked_issue": ["", "AddPrioritiesforAllEventTypes"]
 }, {
 	"title": ["Proposed new Suspense layout effect semantics"],
 	"id": ["#21079"],
@@ -83273,7 +83273,7 @@
 }, {
 	"title": ["Remove redundant if statement"],
 	"id": ["#21101"],
-	"linked_issue": ["", "        Redundant condition in react-devtools-shared      "]
+	"linked_issue": ["", "Redundantconditioninreact-devtools-shared"]
 }, {
 	"title": ["[Fast Refresh] Add more built-in Hooks to the list"],
 	"id": ["#21102"],
@@ -83285,7 +83285,7 @@
 }, {
 	"title": ["[Fast Refresh] Support callthrough HOCs"],
 	"id": ["#21104"],
-	"linked_issue": ["", "        Bug: MobX-like observer pattern doesn't work with Fast Refresh because Hooks don't get detected      "]
+	"linked_issue": ["", "Bug:MobX-likeobserverpatterndoesn'tworkwithFastRefreshbecauseHooksdon'tgetdetected"]
 }, {
 	"title": [],
 	"id": [],
@@ -83349,7 +83349,7 @@
 }, {
 	"title": ["Fix: flushSync changes priority inside effect"],
 	"id": ["#21122"],
-	"linked_issue": ["", "        flushSync should change priority of commit phase updates to sync, even though it can't flush them immediately      "]
+	"linked_issue": ["", "flushSyncshouldchangepriorityofcommitphaseupdatestosync,eventhoughitcan'tflushthemimmediately"]
 }, {
 	"title": ["Delete dead variable: currentEventWipLanes"],
 	"id": ["#21123"],
@@ -83585,7 +83585,7 @@
 }, {
 	"title": ["Fix [Refresh] Components resulting of HOCs composition immediately applied to render functions are ignored"],
 	"id": ["#21180"],
-	"linked_issue": ["", "        Bug: [Refresh] Components resulting of HOCs composition immediately applied to render functions are ignored      "]
+	"linked_issue": ["", "Bug:[Refresh]ComponentsresultingofHOCscompositionimmediatelyappliedtorenderfunctionsareignored"]
 }, {
 	"title": [],
 	"id": [],
@@ -83929,7 +83929,7 @@
 }, {
 	"title": ["Reconciler should inject its own version into DevTools hook"],
 	"id": ["#21268"],
-	"linked_issue": ["", "        DevTools use the renderer version to detect features on react-reconciler      "]
+	"linked_issue": ["", "DevToolsusetherendererversiontodetectfeaturesonreact-reconciler"]
 }, {
 	"title": [],
 	"id": [],
@@ -84501,7 +84501,7 @@
 }, {
 	"title": ["Ensure updating ", " inside suspended ", " component"],
 	"id": ["#21414"],
-	"linked_issue": ["", "        Bug: ", " inside ", " does not receive context updates while suspended\n      "]
+	"linked_issue": ["", "Bug:", " inside ", " does not receive context updates while suspended\n      "]
 }, {
 	"title": [],
 	"id": [],
@@ -84545,7 +84545,7 @@
 }, {
 	"title": ["fix: Run reducers with the props from the queued update"],
 	"id": ["#21419"],
-	"linked_issue": ["", "        Bug: useReducer, reducer function gets called twice (possible memory leak)      "]
+	"linked_issue": ["", "Bug:useReducer,reducerfunctiongetscalledtwice(possiblememoryleak)"]
 }, {
 	"title": [],
 	"id": [],
@@ -84577,7 +84577,7 @@
 }, {
 	"title": ["Fix DevTools bug with Suspense+LegacyHidden component"],
 	"id": ["#21432"],
-	"linked_issue": ["", "        Error: \"Commit tree already contains fiber \"19587\". This is a bug in React DevTools.\"      "]
+	"linked_issue": ["", "Error:\"Committreealreadycontainsfiber\"19587\".ThisisabuginReactDevTools.\""]
 }, {
 	"title": [],
 	"id": [],
@@ -84953,7 +84953,7 @@
 }, {
 	"title": ["Account for another DevTools + Fast Refresh edge case"],
 	"id": ["#21523"],
-	"linked_issue": ["", "        Error: \"Cannot add node \"1\" because a node with that id is already in the Store.\"      "]
+	"linked_issue": ["", "Error:\"Cannotaddnode\"1\"becauseanodewiththatidisalreadyintheStore.\""]
 }, {
 	"title": ["DevTools bugfix for useState() with hasOwnProperty key"],
 	"id": ["#21524"],
@@ -85093,7 +85093,7 @@
 }, {
 	"title": ["DevTools: Support an element mounting before its owner"],
 	"id": ["#21562"],
-	"linked_issue": ["", "        Error: \"Cannot add child \"18903\" to parent \"18774\" because parent node was not found in the Store.\"      "]
+	"linked_issue": ["", "Error:\"Cannotaddchild\"18903\"toparent\"18774\"becauseparentnodewasnotfoundintheStore.\""]
 }, {
 	"title": [],
 	"id": [],
@@ -85501,7 +85501,7 @@
 }, {
 	"title": ["DevTools can inspect Proxies that return broken iterator functions"],
 	"id": ["#21660"],
-	"linked_issue": ["", "        [DevTools Bug] Crash when inspecting component using a hook that returns a Proxy      "]
+	"linked_issue": ["", "[DevToolsBug]CrashwheninspectingcomponentusingahookthatreturnsaProxy"]
 }, {
 	"title": ["Export React Native ", " Types"],
 	"id": ["#21661"],
@@ -85621,7 +85621,7 @@
 }, {
 	"title": ["Fix for failed Suspense layout semantics"],
 	"id": ["#21694"],
-	"linked_issue": ["", "        Bug: Layout effects don't re-fire in 18 on Suspense re-showing      "]
+	"linked_issue": ["", "Bug:Layouteffectsdon'tre-firein18onSuspensere-showing"]
 }, {
 	"title": ["Fix failing test"],
 	"id": ["#21697"],
@@ -85749,7 +85749,7 @@
 }, {
 	"title": ["Log and show error overlay for commit phase errors"],
 	"id": ["#21723"],
-	"linked_issue": ["", "        React 18: Error boundaries actually catches errors in effects      "]
+	"linked_issue": ["", "React18:Errorboundariesactuallycatcheserrorsineffects"]
 }, {
 	"title": [],
 	"id": [],
@@ -85993,7 +85993,7 @@
 }, {
 	"title": ["[WIP] DevTools: Support named hooks for >1 module in a bundle"],
 	"id": ["#21790"],
-	"linked_issue": ["", "        [DevTools] Handle bundles (multi sources) when parsing hook names      "]
+	"linked_issue": ["", "[DevTools]Handlebundles(multisources)whenparsinghooknames"]
 }, {
 	"title": [],
 	"id": [],
@@ -86097,7 +86097,7 @@
 }, {
 	"title": ["DevTooks: Don't dehydrate hook source fileNames"],
 	"id": ["#21814"],
-	"linked_issue": ["", "        [DevTools] Don't serialize hook source fileNames (URLs)      "]
+	"linked_issue": ["", "[DevTools]Don'tserializehooksourcefileNames(URLs)"]
 }, {
 	"title": ["DevTools named hooks: Support FLow syntax"],
 	"id": ["#21815"],
@@ -86137,7 +86137,7 @@
 }, {
 	"title": ["Reset inspected element cache in the event of an error"],
 	"id": ["#21821"],
-	"linked_issue": ["", "        [DevTools] Improve \"retry\" function for inspected component props/state/hooks      "]
+	"linked_issue": ["", "[DevTools]Improve\"retry\"functionforinspectedcomponentprops/state/hooks"]
 }, {
 	"title": ["[fizz] Add comments about task"],
 	"id": ["#21823"],
@@ -86177,7 +86177,7 @@
 }, {
 	"title": ["DevTools: Update named hooks match to use column number also"],
 	"id": ["#21833"],
-	"linked_issue": ["", "        [DevTools] Use line number and column number to match hook      "]
+	"linked_issue": ["", "[DevTools]Uselinenumberandcolumnnumbertomatchhook"]
 }, {
 	"title": [],
 	"id": [],
@@ -86501,7 +86501,7 @@
 }, {
 	"title": ["[DevTools] Combine highlighting code"],
 	"id": ["#21922"],
-	"linked_issue": ["", "        [DevTools] Combine view highlighting code      "]
+	"linked_issue": ["", "[DevTools]Combineviewhighlightingcode"]
 }, {
 	"title": ["Grammar Updation"],
 	"id": ["#21923"],
@@ -86593,7 +86593,7 @@
 }, {
 	"title": ["Add source maps"],
 	"id": ["#21946"],
-	"linked_issue": ["", "        Distribute source maps for easier debugging in Chrome's Performance tab      "]
+	"linked_issue": ["", "DistributesourcemapsforeasierdebugginginChrome'sPerformancetab"]
 }, {
 	"title": ["[DevTools] Add native events to the scheduling profiler"],
 	"id": ["#21947"],
@@ -86637,7 +86637,7 @@
 }, {
 	"title": ["devtools: Remove ForwardRef/Memo from display name if ", " is set"],
 	"id": ["#21952"],
-	"linked_issue": ["", "        DevTools: Order of higher-order component badges      "]
+	"linked_issue": ["", "DevTools:Orderofhigher-ordercomponentbadges"]
 }, {
 	"title": ["Show a soft error when a text string or number is supplied as a child to non text wrappers"],
 	"id": ["#21953"],
@@ -86949,7 +86949,7 @@
 }, {
 	"title": ["Console Logging for StrictMode Double Rendering"],
 	"id": ["#22030"],
-	"linked_issue": ["", "        [DevTools] Console logging and StrictMode double rendering      "]
+	"linked_issue": ["", "[DevTools]ConsoleloggingandStrictModedoublerendering"]
 }, {
 	"title": ["feat: add suggestions for valid deps"],
 	"id": ["#22035"],
@@ -87141,7 +87141,7 @@
 }, {
 	"title": ["Fixed Components tree indentation bug for Chrome extension"],
 	"id": ["#22083"],
-	"linked_issue": ["", "        [DevTools Bug]: Component tree size too small, components can't be selected      "]
+	"linked_issue": ["", "[DevToolsBug]:Componenttreesizetoosmall,componentscan'tbeselected"]
 }, {
 	"title": [],
 	"id": [],
@@ -87373,7 +87373,7 @@
 }, {
 	"title": ["Replace react-virtualized-auto-sizer with ResizeObserver"],
 	"id": ["#22141"],
-	"linked_issue": ["", "        [DevTools Bug]: Cannot hover/click elements after scrolling      "]
+	"linked_issue": ["", "[DevToolsBug]:Cannothover/clickelementsafterscrolling"]
 }, {
 	"title": ["Add aria-description to the list of known ARIA attributes"],
 	"id": ["#22142"],
@@ -87677,7 +87677,7 @@
 }, {
 	"title": ["Dynamic chunkFileName added  #22115"],
 	"id": ["#22217"],
-	"linked_issue": ["", "        DevTools: Better Bundle Names for Dynamically Imported Modules      "]
+	"linked_issue": ["", "DevTools:BetterBundleNamesforDynamicallyImportedModules"]
 }, {
 	"title": ["Anunay Contribution"],
 	"id": ["#22218"],
@@ -87789,7 +87789,7 @@
 }, {
 	"title": ["feat(eslint-plugin-react-hooks): support ESLint 8.x"],
 	"id": ["#22248"],
-	"linked_issue": ["", "        [eslint-plugin-react-hooks] Support ESLint 8.x      "]
+	"linked_issue": ["", "[eslint-plugin-react-hooks]SupportESLint8.x"]
 }, {
 	"title": [],
 	"id": [],
@@ -88101,7 +88101,7 @@
 }, {
 	"title": ["Fixed issue for better bundles,chunks and workers name in devtools-extensions."],
 	"id": ["#22322"],
-	"linked_issue": ["", "        DevTools: Better Bundle Names for Dynamically Imported Modules      "]
+	"linked_issue": ["", "DevTools:BetterBundleNamesforDynamicallyImportedModules"]
 }, {
 	"title": ["Fixed broken build script --unsafe-partial flag"],
 	"id": ["#22324"],
@@ -88193,7 +88193,7 @@
 }, {
 	"title": ["DevTools: Fix memory leak via alternate Fiber pointer"],
 	"id": ["#22346"],
-	"linked_issue": ["", "        React DevTools might retain references to unmounted DOM elements (and their Fibers)      "]
+	"linked_issue": ["", "ReactDevToolsmightretainreferencestounmountedDOMelements(andtheirFibers)"]
 }, {
 	"title": [],
 	"id": [],
@@ -88585,7 +88585,7 @@
 }, {
 	"title": ["Remove usereducer eager bailout"],
 	"id": ["#22445"],
-	"linked_issue": ["", "        Bug: useReducer, reducer function gets called twice (possible memory leak)      "]
+	"linked_issue": ["", "Bug:useReducer,reducerfunctiongetscalledtwice(possiblememoryleak)"]
 }, {
 	"title": ["[Fizz/Flight] Remove reentrancy hack"],
 	"id": ["#22446"],
@@ -88697,7 +88697,7 @@
 }, {
 	"title": ["DevTools: Fixed potential cache miss when insepcting elements"],
 	"id": ["#22472"],
-	"linked_issue": ["", "        [DevTools Bug] Could not inspect element with id \"219\". Error thrown:Cached data for element \"219\" not found      "]
+	"linked_issue": ["", "[DevToolsBug]Couldnotinspectelementwithid\"219\".Errorthrown:Cacheddataforelement\"219\"notfound"]
 }, {
 	"title": [],
 	"id": [],
