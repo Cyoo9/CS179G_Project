@@ -11,7 +11,7 @@ class PullRequestSpider(scrapy.Spider):
     def __init__(self):
         url = 'https://github.com/facebook/react/pull/'
 
-        for page in range(18549, 22545): 
+        for page in range(0, 0): #crawled 1 -> 22544 (range is from 1 to 22545) pages, currently deactivate to prevent accidental duplication in json. 
             self.start_urls.append(url + str(page))
 
     def parse(self, response):

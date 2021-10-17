@@ -11,7 +11,7 @@ class IssuesSpider(scrapy.Spider):
     def __init__(self):
         url = 'https://github.com/facebook/react/issues?q=is%3Aissue+is%3Aclosed&page='
 
-        for page in range(1, 408): 
+        for page in range(0, 0): # vrawled 1 through 407 pages. (range is 1 through 408). currently set to 0 0 to prevent accidental duplication 
             self.start_urls.append(url + str(page))
 
     def parse(self, response):
