@@ -1,15 +1,23 @@
 import pyspark
+from pyspark.sql import SQLContext
 
-sc = pyspark.SparkContext('local[*]')
-issues = sc.textFile('issues_filtered.json')
-issueCount = issues.flatMap(lambda line: line.split(","))
-print(issueCount.take(100))
+sparkCont = pyspark.SparkContext('local[*]')
+sc = SQLContext(sparkCont)
 
-releases = sc.textFile('cs179g_crawler/releases.json')
-pull_requests = sc.textFile('cs179g_crawler/pull_requests.json')
 
-print(releases.take(100))
-print(pull_requests.take(100))
+issues = sc.read.json('issues_filtered.json')
+issues.createOrReplaceTempView("title")
+
+releases = sc.read.json('cs179g_crawler/releases.json')
+releases.createOrReplaceTempView("pull_request_ids")
+
+pull_requests = sc.read.json('cs179g_crawler/pull_requests.json')
+pull_requests.createOrReplaceTempView("linked_issue")
+
+sc.sql("SELECT * FROM title").show()
+
+
+
 
 #match pull requests linked issue to issues_filtered title. match pull request id to ids in releases. 
 #if matched, compare releases date and issue date and take difference to find out how long it took for issue to be resolved. 
