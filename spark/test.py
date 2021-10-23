@@ -1,8 +1,15 @@
 import pyspark
 
 sc = pyspark.SparkContext('local[*]')
-txt = sc.textFile('file:////usr/share/doc/python3/copyright')
-print(txt.count())
+issues = sc.textFile('issues_filtered.json')
+issueCount = issues.flatMap(lambda line: line.split(","))
+print(issueCount.take(100))
 
-python_lines = txt.filter(lambda line: 'python' in line.lower())
-print(python_lines.count())
+releases = sc.textFile('cs179g_crawler/releases.json')
+pull_requests = sc.textFile('cs179g_crawler/pull_requests.json')
+
+print(releases.take(100))
+print(pull_requests.take(100))
+
+#match pull requests linked issue to issues_filtered title. match pull request id to ids in releases. 
+#if matched, compare releases date and issue date and take difference to find out how long it took for issue to be resolved. 
