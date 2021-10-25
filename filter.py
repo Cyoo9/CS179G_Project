@@ -5,6 +5,9 @@ f = open('pull_requests_copy.json')
 f2 = open('issues_copy.json')
 
 pull_requests = json.load(f) 
+# will not put empty pull requests into the filtered JSON file, (basically if the id does not exist, remove it)
+pull_requests = [pr for pr in pull_requests if pr['id']]
+
 issues = json.load(f2)
 output_file = open('pull_requests_filtered.json', 'w') 
 output_file2 = open('issues_filtered.json', 'w') 
