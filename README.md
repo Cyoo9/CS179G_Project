@@ -1,5 +1,5 @@
 # CS179G_Project
-Big data analytics project using Spark
+- Facebook React analytics project using Spark
 
 # After cloning
 - git branch *your-branch-name*
@@ -14,17 +14,12 @@ Big data analytics project using Spark
 - Use spider to crawl data 
 
 # pipelines.py 
-- Use Spark to store crawled data inside MySQL database 
-
-# execute 
-- scrapy crawl stack_spider (stackoverflow questions)
-- scrapy crawl releases_spider (github releases spider. using vue storefront repo)
-- scrapy crawl issues_spider (github issues spider. using vue storefront repo) 
-
+- Not using right now. 
+- 
 # output files
-- items.json / items.csv (stackoverflow live questions)
 - issues.json (github issues)
 - releases.json (github releases)
+- pull_requests.json (github pull requests)
 
 # Run Django Server
 - make sure you're in directory with manage.py
