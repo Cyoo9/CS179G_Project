@@ -13,9 +13,6 @@
 # <spider_name>.py 
 - Use spider to crawl data 
 
-# pipelines.py 
-- Not using right now. 
-- 
 # output files
 - issues.json (github issues)
 - releases.json (github releases)
