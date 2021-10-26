@@ -10,8 +10,8 @@
 - In directory with requirements.txt, run command in terminal
 1. pip install -r requirements.txt
 
-# <spider_name>.py 
-- Use spider to crawl data 
+# cs179_crawler 
+- This directory has the 3 spiders that crawl issues, releases, and pull requests. 
 
 # output files
 - issues.json (github issues)
