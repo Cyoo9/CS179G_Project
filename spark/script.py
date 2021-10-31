@@ -1,54 +1,43 @@
 import pyspark
 from pyspark.sql import SQLContext
+import dateutil.parser
 
 sparkCont = pyspark.SparkContext('local[*]')
 sc = SQLContext(sparkCont)
 
-issues = sc.read.option("multiline", "true").json("issues_filtered.json")
-issues.createOrReplaceTempView("issues_filtered_json")
-
 releases = sc.read.option("multiline", "true").json("./cs179g_crawler/releases.json")
 releases.createOrReplaceTempView("releases_json")
 df = sc.sql("SELECT * from releases_json")
-
-release_times = df.select('date').collect() 
-linked_pull_requests = df.select('pull_request_ids').collect()
+releases_info = df.select('tag', 'features_and_fixes', 'pull_request_ids', 'date').collect()
 
 pull_requests = sc.read.option("multiline", "true").json("pull_requests_filtered.json")
 pull_requests.createOrReplaceTempView("pull_requests_json")
 df = sc.sql("SELECT * from pull_requests_json")
-pull_request_ids = df.select('id').collect()
-linked_issues = df.select('linked_issue').collect()
-issue_times = df.select('date').collect()
+pull_requests_info = df.select('id', 'linked_issue', 'title').collect() #need to merge this with linked_issues, and issue_times
 
 issues = sc.read.option("multiline", "true").json("issues_filtered.json")
-pull_requests.createOrReplaceTempView("issues_json")
+issues.createOrReplaceTempView("issues_json")
 df = sc.sql("SELECT * from issues_json")
-issue_titles = df.select('title').collect()
+issues_info = df.select('title', 'url', 'date', 'status').collect() #need to merge this with other issue fields
 
-print(len(pull_request_ids))
-print(len(linked_issues))
-print(len(issue_titles))
-
-# First check if pull request is part of a release and get the the time of release 
-
-issue_resolved_differences = []
-
-for pull_request in pull_request_ids:
-    releaseDate = ""
+for request in pull_requests_info: #loop through pull requests
     issueDate = ""
-    if(len(pull_request.id)):
-        for releaseTime in release_times:
-            for linked_pull_request in linked_pull_requests:
-                if pull_request.id[0] in linked_pull_request.pull_request_ids:
-                    releaseDate = releaseTime #find release time based on matching pull requests. 
-        # for issueTime in issue_times:
+    releaseDate = ""
+    timeDifference = ""
+    for issue in issues_info: #loop through issues
+        if(len(request.linked_issue) > 1): #check if linked issue is not epmty
+            if(issue.title == request.linked_issue[1]): #if it is not empty, check if the issue title matches one of the linked issues 
+                issueDate = dateutil.parser.parse(issue.date).timestamp()
+                # print(issueDate)
+                break #leave issue for loop. we are done checking for issues until next pull request. 
+    if(issueDate): #if we had a matching issue above, loop through releases to get release date
+        for release in releases_info:
+            if(len(request.id) > 0):
+                if(request.id[0] in release.pull_request_ids):
+                    releaseDate = dateutil.parser.parse(release.date).timestamp()
+                    timeDifference = releaseDate - issueDate
+                    print(timeDifference) 
+                    break #leave release for loop. we are done checking for releases until next pull request. we have our time difference. 
 
-                    
+
                 
-#Then, match the pull request's linked_issue to an issue title to get the time of the issue (need to merge this with release date/time somehow)
-
-# for issue in issue_titles:
-#     for linked_issue in linked_issues:
-#         if(len(linked_issue[0]) > 1):
-#             print(linked_issue[0][1])
