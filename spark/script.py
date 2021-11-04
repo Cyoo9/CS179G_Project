@@ -1,3 +1,4 @@
+from datetime import time
 import pyspark
 from pyspark.sql import SQLContext
 import dateutil.parser
@@ -20,6 +21,8 @@ issues.createOrReplaceTempView("issues_json")
 df = sc.sql("SELECT * from issues_json")
 issues_info = df.select('title', 'url', 'date', 'status').collect() #need to merge this with other issue fields
 
+processed_data = { "issue_titles": [], "release_features_and_fixes": [], "time_differerences": [] } #this goes into mysql?
+
 for request in pull_requests_info: #loop through pull requests
     issueDate = ""
     releaseDate = ""
@@ -28,6 +31,7 @@ for request in pull_requests_info: #loop through pull requests
         if(len(request.linked_issue) > 1): #check if linked issue is not epmty
             if(issue.title == request.linked_issue[1]): #if it is not empty, check if the issue title matches one of the linked issues 
                 issueDate = dateutil.parser.parse(issue.date).timestamp()
+                processed_data["issue_titles"].append(issue.title)
                 # print(issueDate)
                 break #leave issue for loop. we are done checking for issues until next pull request. 
     if(issueDate): #if we had a matching issue above, loop through releases to get release date
@@ -36,8 +40,7 @@ for request in pull_requests_info: #loop through pull requests
                 if(request.id[0] in release.pull_request_ids):
                     releaseDate = dateutil.parser.parse(release.date).timestamp()
                     timeDifference = releaseDate - issueDate
-                    print(timeDifference) 
+                    processed_data["release_features_and_fixes"].append(request.features_and_fixes)
+                    processed_data["time_differerences"].append(timeDifference)
                     break #leave release for loop. we are done checking for releases until next pull request. we have our time difference. 
 
-
-                
