@@ -40,7 +40,8 @@ for request in pull_requests_info: #loop through pull requests
                 if(request.id[0] in release.pull_request_ids):
                     releaseDate = dateutil.parser.parse(release.date).timestamp()
                     timeDifference = releaseDate - issueDate
-                    processed_data["release_features_and_fixes"].append(request.features_and_fixes)
+                    processed_data["release_features_and_fixes"].append(release.features_and_fixes)
                     processed_data["time_differerences"].append(timeDifference)
                     break #leave release for loop. we are done checking for releases until next pull request. we have our time difference. 
 
+print(processed_data)
