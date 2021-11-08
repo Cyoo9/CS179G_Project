@@ -21,7 +21,7 @@ issues.createOrReplaceTempView("issues_json")
 df = sc.sql("SELECT * from issues_json")
 issues_info = df.select('title', 'url', 'date', 'status').collect() #need to merge this with other issue fields
 
-processed_data = { "issue_titles": [], "release_features_and_fixes": [], "time_differerences": [] } #this goes into mysql?
+processed_data = { "issue_titles": [], "release_features_and_fixes": [], "time_differerences": [], "release_tags": [] } #this goes into mysql?
 
 for request in pull_requests_info: #loop through pull requests
     issueDate = ""
@@ -42,6 +42,7 @@ for request in pull_requests_info: #loop through pull requests
                     timeDifference = releaseDate - issueDate
                     processed_data["release_features_and_fixes"].append(release.features_and_fixes)
                     processed_data["time_differerences"].append(timeDifference)
+                    processed_data["release_tags"].append(release.tag)
                     break #leave release for loop. we are done checking for releases until next pull request. we have our time difference. 
 
 print(processed_data)
