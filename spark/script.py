@@ -31,16 +31,21 @@ db_cursor.execute("CREATE TABLE IF NOT EXISTS TimeDifferences(\
     time_differences FLOAT);")
 
 row = { "issue_titles": [], "release_features_and_fixes": [], "time_differences": [] }
+processed_data = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } #this goes into mysql?
 
 for request in pull_requests_info: #loop through pull requests
     issueDate = ""
     releaseDate = ""
     timeDifference = ""
+    issue_title = ""
+    issue_status = ""
     for issue in issues_info: #loop through issues
         if(len(request.linked_issue) > 1): #check if linked issue is not empty
             if(issue.title == request.linked_issue[1]): #if it is not empty, check if the issue title matches one of the linked issues 
                 issueDate = dateutil.parser.parse(issue.date).timestamp()
                 row['issue_titles'] = issue.title
+                issue_title = issue.title
+                issue_status = issue.status
                 # print(issueDate)
                 break #leave issue for loop. we are done checking for issues until next pull request. 
     if(issueDate): #if we had a matching issue above, loop through releases to get release date
@@ -71,3 +76,18 @@ for row in records:
         print("issue_titles = ", row[0], )
         print("release_features_and_fixes = ", row[1])
         print("time_differences  = ", row[2], "\n")
+
+                    processed_data["release_features_and_fixes"].append(release.features_and_fixes)
+                    processed_data["time_differences"].append(timeDifference)
+                    processed_data["release_tags"].append(release.tag)
+                    processed_data["issue_titles"].append(issue_title)
+                    processed_data["issue_statuses"].append(issue_status)
+                    break #leave release for loop. we are done checking for releases until next pull request. we have our time difference. 
+
+print(processed_data)
+print(len(processed_data['issue_titles']))
+print(len(processed_data['issue_statuses']))
+print(len(processed_data['release_features_and_fixes']))
+print(len(processed_data['time_differences']))
+print(len(processed_data['release_tags']))
+
