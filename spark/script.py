@@ -23,7 +23,7 @@ df = sc.sql("SELECT * from issues_json")
 issues_info = df.select('title', 'url', 'date', 'status').collect() #need to merge this with other issue fields
 
 # make the table
-db_connection = mysql.connector.connect(user="ckong", password="cs179g")
+db_connection = mysql.connector.connect(user="jnguy557", password="password")
 db_cursor = db_connection.cursor(buffered=True)
 db_cursor.execute("USE cs179g;")
 db_cursor.execute("CREATE TABLE IF NOT EXISTS TimeDifferences(\
@@ -80,7 +80,7 @@ print('Finished inserting data into MySQL')
                     
 db_cursor.execute("SELECT * FROM TimeDifferences;")
 records = db_cursor.fetchall()
-# print(db_cursor.fetchall())
+#print(db_cursor.fetchall())
 
 for record in records:
         print("issue_titles = ", record[0])
@@ -95,4 +95,3 @@ for record in records:
 # print(len(processed_data['release_features_and_fixes']))
 # print(len(processed_data['time_differences']))
 # print(len(processed_data['release_tags']))
-
