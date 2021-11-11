@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Facebook Time Differences</title>
+    <link rel="stylesheet" href="../static/css/time_differences.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+
+    <div id="chart_div"></div>
+    {{data | json_script:"time-data"}}
+
+    <script>
+        google.charts.load("current", { packages: ["corechart", "bar"] });
+        google.charts.setOnLoadCallback(drawBasic);
+
+        function drawBasic() {
+            var temp = JSON.parse(
+                document.getElementById("time-data").textContent
+            );
+            let temp_data = [];
+            temp_data.push(["Issue_Titles", "Time_Differences"]);
+            for (var i = 0; i < temp.length; i++) {
+                temp_data.push([temp[i][0], parseInt(temp[i][3])]);
+            }
+
+            // print("issue_titles = ", record[0])
+            // print("issue_statuses = ", record[1])
+            // print("release_features_and_fixes = ", record[2])
+            // print("time_differences  = ", record[3])
+            // print("release_tags  = ", record[4], "\n")
+
+
+            var data = google.visualization.arrayToDataTable(temp_data);
+            data.sort({ column: 1, desc: true });
+
+            //console.log(temp_data);
+
+            var options = {
+                title: "Facebook Github Repo Time Difference",
+                chartArea: {
+                    width: '80%',
+                    height: '70%'
+                },
+                hAxis: {
+                    title: "Issue Titles",
+                    // format: 'h:mm a',
+                    viewWindow: {
+                        min: [7, 30, 0],
+                        max: [17, 30, 0],
+                    },
+                },
+                vAxis: {
+                    title: "Time Difference (epoch milliseconds)",
+                },
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
+
+            chart.draw(data, options);
+        }
+    </script>
+</body>
+
+</html>
