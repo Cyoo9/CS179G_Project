@@ -22,3 +22,11 @@ def hello(request):
     print('Hello from backend!!!')
     return HttpResponse('Hello World!')
 
+def timeDifferences(request):
+    #context
+    db = mysql.connector.connect(user="jnguy557", password="password")
+    cursor = db.cursor();
+    cursor.execute("USE cs179g")
+    cursor.execute("SELECT * FROM TimeDifferences;")
+    context = cursor.fetchall()
+    return render(request, 'time_differences.html', {"data" : context})

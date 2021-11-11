@@ -132,7 +132,22 @@ issues.createOrReplaceTempView("issues_json")
 df = sc.sql("SELECT * from issues_json")
 issues_info = df.select('title', 'url', 'date', 'status').collect() #need to merge this with other issue fields
 
-processed_data = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } #this goes into mysql?
+# <<<<<<< dev-caleb
+# processed_data = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } #this goes into mysql?
+# =======
+# # make the table
+# db_connection = mysql.connector.connect(user="jnguy557", password="password")
+# db_cursor = db_connection.cursor(buffered=True)
+# db_cursor.execute("USE cs179g;")
+# db_cursor.execute("CREATE TABLE IF NOT EXISTS TimeDifferences(\
+#     issue_titles TEXT, \
+#     issue_statuses TEXT, \
+#     release_features_and_fixes TEXT, \
+#     time_differences FLOAT,\
+#     release_tags TEXT);")
+
+# row = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] }
+# >>>>>>> main
 
 for request in pull_requests_info: #loop through pull requests
     issueDate = ""
@@ -183,6 +198,23 @@ print("avg time diffs for each status: ")
 print(avg_time_diff.collect())
 
 
+# <<<<<<< dev-caleb
+# =======
+# print('Finished inserting data into MySQL')
+                    
+# db_cursor.execute("SELECT * FROM TimeDifferences;")
+# records = db_cursor.fetchall()
+# #print(db_cursor.fetchall())
+# >>>>>>> main
 
 
+# <<<<<<< dev-caleb
 
+# =======
+# # print(processed_data)
+# # print(len(processed_data['issue_titles']))
+# # print(len(processed_data['issue_statuses']))
+# # print(len(processed_data['release_features_and_fixes']))
+# # print(len(processed_data['time_differences']))
+# # print(len(processed_data['release_tags']))
+# >>>>>>> main
