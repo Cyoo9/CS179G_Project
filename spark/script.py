@@ -113,6 +113,9 @@ from datetime import time
 import pyspark
 from pyspark.sql import SQLContext
 import dateutil.parser
+import time
+
+startTime = time.time()
 
 sparkCont = pyspark.SparkContext('local[*]')
 sc = SQLContext(sparkCont)
@@ -196,6 +199,10 @@ avg_time_diff = status_time_diff_total.join(status_frequencies_total).mapValues(
 
 print("avg time diffs for each status: ")
 print(avg_time_diff.collect())
+
+endTime = time.time()
+
+print("total execution time: ", endTime - startTime)
 
 
 # <<<<<<< dev-caleb
