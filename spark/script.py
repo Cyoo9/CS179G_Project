@@ -114,6 +114,7 @@ import pyspark
 from pyspark.sql import SQLContext
 import dateutil.parser
 import time
+import mysql.connector
 
 startTime = time.time()
 
@@ -135,27 +136,32 @@ issues.createOrReplaceTempView("issues_json")
 df = sc.sql("SELECT * from issues_json")
 issues_info = df.select('title', 'url', 'date', 'status').collect() #need to merge this with other issue fields
 
-# <<<<<<< dev-caleb
-# processed_data = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } #this goes into mysql?
-# =======
-# # make the table
-# db_connection = mysql.connector.connect(user="jnguy557", password="password")
-# db_cursor = db_connection.cursor(buffered=True)
-# db_cursor.execute("USE cs179g;")
-# db_cursor.execute("CREATE TABLE IF NOT EXISTS TimeDifferences(\
-#     issue_titles TEXT, \
-#     issue_statuses TEXT, \
-#     release_features_and_fixes TEXT, \
-#     time_differences FLOAT,\
-#     release_tags TEXT);")
 
-# row = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] }
-# >>>>>>> main
+processed_data = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } #this goes into mysql?
+
+# make the table
+db_connection = mysql.connector.connect(user="jnguy557", password="password")
+db_cursor = db_connection.cursor(buffered=True)
+db_cursor.execute("USE cs179g;")
+db_cursor.execute("CREATE TABLE IF NOT EXISTS TimeDifferences(\
+    issue_titles TEXT, \
+    issue_statuses TEXT, \
+    release_features_and_fixes TEXT, \
+    time_differences FLOAT,\
+    release_tags TEXT);")
+
+
+db_cursor.execute("CREATE TABLE IF NOT EXISTS AverageTimeDifferences(\
+    issue_titles TEXT, \
+    time_differences FLOAT);")
+
+
+row = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] }
 
 for request in pull_requests_info: #loop through pull requests
     issueDate = ""
     releaseDate = ""
-    timeDifference = ""
+    timeDifference = 0.0
     issue_title = ""
     issue_status = ""
     for issue in issues_info: #loop through issues
@@ -174,12 +180,33 @@ for request in pull_requests_info: #loop through pull requests
             if(len(request.id) > 0):
                 if(request.id[0] in release.pull_request_ids):
                     releaseDate = dateutil.parser.parse(release.date).timestamp()
-                    timeDifference = releaseDate - issueDate
+                    timeDifference = (releaseDate - issueDate) / 86400 #converts epon
                     processed_data["release_features_and_fixes"].append(release.features_and_fixes)
                     processed_data["time_differences"].append(timeDifference)
                     processed_data["release_tags"].append(release.tag)
                     processed_data["issue_titles"].append(issue_title)
                     processed_data["issue_statuses"].append(issue_status)
+
+                    row['issue_titles'] = issue_title
+                    row['issue_statuses'] = issue_status
+                    row['issue_statuses'] = '' # need to concatenate issue_statuses indices to store it as 1 string
+                    for i in range(len(issue_status)):
+                        row['issue_statuses'] += ' ' + issue_status[i]
+                    
+                    row['release_features_and_fixes'] = '' # need to concatenate features_and_fixes indices to store it as 1 string
+                    for i in range(len(release.features_and_fixes)):
+                        row['release_features_and_fixes'] += release.features_and_fixes[i]
+                        
+                    row['time_differences'] = timeDifference
+                    row['release_tags'] = release.tag
+                                        
+                    query = "INSERT INTO TimeDifferences VALUES (%s, %s, %s, %s, %s);"
+                    data = (row['issue_titles'], row['issue_statuses'], row['release_features_and_fixes'], row['time_differences'], row['release_tags'])
+
+                    db_cursor.execute(query, data)
+                    db_cursor.execute("FLUSH TABLES;")
+
+
                     break #leave release for loop. we are done checking for releases until next pull request. we have our time difference. 
                 
 status_time_diff = sparkCont.parallelize(list(zip(processed_data['issue_statuses'], processed_data['time_differences'])))
@@ -203,7 +230,6 @@ print(avg_time_diff.collect())
 endTime = time.time()
 
 print("total execution time: ", endTime - startTime)
-
 
 # <<<<<<< dev-caleb
 # =======
