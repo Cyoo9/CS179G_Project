@@ -110,11 +110,15 @@
 # print(len(processed_data['release_tags']))
 
 from datetime import time
+from mysql.connector import connection
 import pyspark
 from pyspark.sql import SQLContext
 import dateutil.parser
 import time
 import mysql.connector
+import pymysql
+import sqlalchemy
+from sqlalchemy import create_engine
 
 startTime = time.time()
 
@@ -149,11 +153,6 @@ db_cursor.execute("CREATE TABLE IF NOT EXISTS TimeDifferences(\
     release_features_and_fixes TEXT, \
     time_differences FLOAT,\
     release_tags TEXT);")
-
-
-db_cursor.execute("CREATE TABLE IF NOT EXISTS AverageTimeDifferences(\
-    issue_titles TEXT, \
-    time_differences FLOAT);")
 
 
 row = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] }
@@ -218,11 +217,18 @@ for status in processed_data["issue_statuses"]:
     status_frequencies.append((status, 1))
 
 status_frequencies_parallelized = sparkCont.parallelize(status_frequencies)
-
 status_time_diff_total = status_time_diff.reduceByKey(lambda x, y: x + y)
 status_frequencies_total = status_frequencies_parallelized.reduceByKey(lambda x, y: x + y)
 
 avg_time_diff = status_time_diff_total.join(status_frequencies_total).mapValues(lambda x: x[0] / x[1])
+
+#storing avg_time_diff into database table named AverageTimeDifferences
+avg_time_diff_df = sc.createDataFrame(avg_time_diff)
+avg_time_diff_df = avg_time_diff_df.toPandas()
+engine = create_engine("mysql+pymysql://jnguy557:password@localhost/cs179g")
+avg_time_diff_df.to_sql(con=engine, name='AverageTimeDifferences', if_exists='replace', index=False)
+
+
 
 print("avg time diffs for each status: ")
 print(avg_time_diff.collect())
