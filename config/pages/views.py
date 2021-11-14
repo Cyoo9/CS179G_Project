@@ -30,3 +30,11 @@ def timeDifferences(request):
     cursor.execute("SELECT * FROM TimeDifferences;")
     context = cursor.fetchall()
     return render(request, 'time_differences.html', {"data" : context})
+
+def averageStatusTimeDifference(request):
+    db = mysql.connector.connect(user="jnguy557", password="password")
+    cursor = db.cursor();
+    cursor.execute("USE cs179g")
+    cursor.execute("SELECT * FROM AverageTimeDifferences;")
+    context = cursor.fetchall()
+    return render(request, 'avg_time_differences.html', {"data" : context})
