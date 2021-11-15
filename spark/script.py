@@ -152,6 +152,7 @@ db_connection = mysql.connector.connect(
   auth_plugin='mysql_native_password'
 )
 
+
 db_cursor = db_connection.cursor(buffered=True)
 db_cursor.execute("USE cs179g;")
 db_cursor.execute("CREATE TABLE IF NOT EXISTS TimeDifferences(\
@@ -241,4 +242,26 @@ print(avg_time_diff.collect())
 
 endTime = time.time()
 
+
 print("total execution time: ", endTime - startTime)
+
+# <<<<<<< dev-caleb
+# =======
+# print('Finished inserting data into MySQL')
+                    
+# db_cursor.execute("SELECT * FROM TimeDifferences;")
+# records = db_cursor.fetchall()
+# #print(db_cursor.fetchall())
+# >>>>>>> main
+
+
+# <<<<<<< dev-caleb
+
+# =======
+# # print(processed_data)
+# # print(len(processed_data['issue_titles']))
+# # print(len(processed_data['issue_statuses']))
+# # print(len(processed_data['release_features_and_fixes']))
+# # print(len(processed_data['time_differences']))
+# # print(len(processed_data['release_tags']))
+# >>>>>>> main
