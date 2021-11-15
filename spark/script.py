@@ -144,7 +144,15 @@ issues_info = df.select('title', 'url', 'date', 'status').collect() #need to mer
 processed_data = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } #this goes into mysql?
 
 # make the table
-db_connection = mysql.connector.connect(user="jnguy557", password="password")
+db_connection = mysql.connector.connect(
+  host="localhost",
+  user="caleb",
+  password="password",
+  database="cs179g",
+  auth_plugin='mysql_native_password'
+)
+
+
 db_cursor = db_connection.cursor(buffered=True)
 db_cursor.execute("USE cs179g;")
 db_cursor.execute("CREATE TABLE IF NOT EXISTS TimeDifferences(\
@@ -225,15 +233,15 @@ avg_time_diff = status_time_diff_total.join(status_frequencies_total).mapValues(
 #storing avg_time_diff into database table named AverageTimeDifferences
 avg_time_diff_df = sc.createDataFrame(avg_time_diff)
 avg_time_diff_df = avg_time_diff_df.toPandas()
-engine = create_engine("mysql+pymysql://jnguy557:password@localhost/cs179g")
+engine = create_engine("mysql+pymysql://caleb:password@localhost/cs179g")
 avg_time_diff_df.to_sql(con=engine, name='AverageTimeDifferences', if_exists='replace', index=False)
-
 
 
 print("avg time diffs for each status: ")
 print(avg_time_diff.collect())
 
 endTime = time.time()
+
 
 print("total execution time: ", endTime - startTime)
 
