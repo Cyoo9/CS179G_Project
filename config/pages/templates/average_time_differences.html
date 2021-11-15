@@ -3,7 +3,7 @@
 
 <head>
     <title>Facebook Time Differences</title>
-    <link rel="stylesheet" href="../static/css/time_differences.css">
+    <link rel="stylesheet" href="../static/css/avg_time_differences.css">
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
@@ -22,9 +22,9 @@
                 document.getElementById("time-data").textContent
             );
             let temp_data = [];
-            temp_data.push(["Issue_Titles", "Time_Differences"]);
+            temp_data.push(["Issue Status", "Time_Differences"]);
             for (var i = 0; i < temp.length; i++) {
-                temp_data.push([temp[i][0], parseInt(temp[i][3])]);
+                temp_data.push([temp[i][0], parseInt(temp[i][1])]);
             }
 
             // print("issue_titles = ", record[0])
@@ -33,28 +33,27 @@
             // print("time_differences  = ", record[3])
             // print("release_tags  = ", record[4], "\n")
 
-
             var data = google.visualization.arrayToDataTable(temp_data);
+    
             data.sort({ column: 1, desc: true });
 
             //console.log(temp_data);
 
             var options = {
-                title: "Facebook Github Repo Average Time Difference Per Status",
+                title: "Facebook Github Repo Average Time Difference",
                 chartArea: {
-                    width: '80%',
-                    height: '70%'
+                    width: '70%',
+                    height: '50%',
                 },
                 hAxis: {
-                    title: "Issue Statuses",
-                    // format: 'h:mm a',
+                    title: "Status",
                     viewWindow: {
                         min: [7, 30, 0],
                         max: [17, 30, 0],
                     },
                 },
                 vAxis: {
-                    title: "Average Time Difference (epoch milliseconds)",
+                    title: "Time Difference (Days)",
                 },
             };
 
