@@ -24,9 +24,14 @@ def hello(request):
 
 def timeDifferences(request):
     #context
-    db = mysql.connector.connect(user="jnguy557", password="password")
+    db = mysql.connector.connect(user="caleb", password="password")
     cursor = db.cursor();
     cursor.execute("USE cs179g")
-    cursor.execute("SELECT * FROM TimeDifferences;")
-    context = cursor.fetchall()
-    return render(request, 'time_differences.html', {"data" : context})
+    if(request.GET.get('search') == 'time difference'):
+        cursor.execute("SELECT * FROM TimeDifferences;")
+        context = cursor.fetchall()
+        return render(request, 'time_differences.html', {"data" : context})
+    elif(request.GET.get('search') == 'average time difference'):
+        cursor.execute("SELECT * FROM AverageTimeDifferences;")
+        context = cursor.fetchall()
+        return render(request, 'average_time_differences.html', {"data" : context})
