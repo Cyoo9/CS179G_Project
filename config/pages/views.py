@@ -34,7 +34,7 @@ def timeDifferences(request):
     elif(request.GET.get('search') == 'average time difference'):
         cursor.execute("SELECT * FROM AverageTimeDifferences;")
         context = cursor.fetchall()
-        return render(request, 'average_time_differences.html', {"data" : context})
+        return render(request, 'avg_time_differences.html', {"data" : context})
 def averageStatusTimeDifference(request):
     db = mysql.connector.connect(user="caleb", password="password")
     cursor = db.cursor();

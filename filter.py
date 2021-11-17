@@ -22,6 +22,8 @@ for pr in pull_requests:
 
 for issue in issues:
     issue['title'] = issue['title'].replace(' ', '')
+    issue['issue_title'] = issue.pop('title')
+    issue['issue_date'] = issue.pop('date')
 
 json.dump(pull_requests, output_file)
 json.dump(issues, output_file2)
