@@ -12,7 +12,7 @@ class IssuesItem(scrapy.Item):
     # name = scrapy.Field()
     title = scrapy.Field() 
     url = scrapy.Field()
-    date = scrapy.Field()
+    issue_date = scrapy.Field()
     status = scrapy.Field()
     pass
 
@@ -28,5 +28,5 @@ class ReleasesItem(scrapy.Item):
     url = scrapy.Field()
     pull_request_ids = scrapy.Field() 
     features_and_fixes = scrapy.Field()
-    date = scrapy.Field()
+    release_date = scrapy.Field()
     pass 

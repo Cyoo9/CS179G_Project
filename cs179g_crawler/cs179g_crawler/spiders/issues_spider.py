@@ -11,7 +11,7 @@ class IssuesSpider(scrapy.Spider):
     def __init__(self):
         url = 'https://github.com/facebook/react/issues?q=is%3Aissue+is%3Aclosed&page='
 
-        for page in range(0, 0): # vrawled 1 through 407 pages. (range is 1 through 408). currently set to 0 0 to prevent accidental duplication 
+        for page in range(1, 408): # vrawled 1 through 407 pages. (range is 1 through 408). currently set to 0 0 to prevent accidental duplication 
             self.start_urls.append(url + str(page))
 
     def parse(self, response):
@@ -20,6 +20,6 @@ class IssuesSpider(scrapy.Spider):
             item = IssuesItem()
             item['title'] = issue.xpath('a[@class="Link--primary v-align-middle no-underline h4 js-navigation-open markdown-title"]/text()').extract()[0]
             item['url'] = issue.xpath('a[@class="Link--primary v-align-middle no-underline h4 js-navigation-open markdown-title"]/@href').extract()[0]
-            item['date'] = issue.xpath('div[@class="d-flex mt-1 text-small color-text-secondary"]/span/relative-time/@datetime').extract()[0]
+            item['issue_date'] = issue.xpath('div[@class="d-flex mt-1 text-small color-text-secondary"]/span/relative-time/@datetime').extract()
             item['status'] = issue.xpath('span[@class="labels lh-default d-block d-md-inline"]/a/@data-name').extract()
             yield item     
