@@ -172,8 +172,9 @@ desiredPRIssue = prDF.join(issueDF, prDF.linked_issue[1] == issueDF.issue_title,
 
 desiredReleasePRIssue = desiredPRIssue.join(releaseDF, releaseDF.pull_request_ids.cast("string").contains(desiredPRIssue.id[0]), how="inner")
 
+print(desiredReleasePRIssue.show())
 processed_data = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } 
-row = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } #goes into mysql. con
+# row = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } 
 
 for issueAndRelease in desiredReleasePRIssue.collect():
   if(issueAndRelease.id[0] in issueAndRelease.pull_request_ids):
