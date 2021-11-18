@@ -196,10 +196,22 @@ for issueAndRelease in desiredReleasePRIssue.collect():
     processed_data['release_tags'].append(issueAndRelease.tag)
                       
     query = "INSERT INTO TimeDifferences VALUES (%s, %s, %s, %s, %s);"
-    data = (issueAndRelease.issue_title, status, release_features_and_fixes, timeDiff, issueAndRelease.tag)
+    data = (processed_data['issue_titles'][-1], processed_data['issue_statuses'][-1], processed_data['release_features_and_fixes'][-1], processed_data['time_differences'][-1], processed_data['release_tags'][-1])
+    db_cursor.close()
 
-    # db_cursor.execute(query, data) << this line is not working. 
-    # db_cursor.execute("FLUSH TABLES;")
+    db_connection = mysql.connector.connect(
+        host="localhost",
+        user="caleb",
+        password="password",
+        database="cs179g",
+        auth_plugin='mysql_native_password'
+    )
+
+    db_cursor = db_connection.cursor(buffered=True)
+    db_cursor.execute("USE cs179g;")
+    db_cursor.execute(query, data) 
+    db_cursor.execute("FLUSH TABLES;")
+    db_cursor.close()
 
 
 # with open("test.json", "w") as outfile:
@@ -224,12 +236,10 @@ avg_time_diff_df = avg_time_diff_df.toPandas()
 engine = create_engine("mysql+pymysql://caleb:password@localhost/cs179g")
 avg_time_diff_df.to_sql(con=engine, name='AverageTimeDifferences', if_exists='replace', index=False)
 
-
 print("avg time diffs for each status: ")
 print(avg_time_diff.collect())
 
 endTime = time.time()
-
 
 print("total execution time: ", endTime - startTime)
 
