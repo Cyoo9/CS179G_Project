@@ -16,7 +16,12 @@ html {
     left: 50%;
     top: 80%;
     transform: translate(-50%, -50%);
-    margin: 0 auto;
+    margin: 30px;
+}
+
+#master {
+    text-align: center;
+    align-items: center;
 }
 
 #homepage-search-bar {
@@ -25,8 +30,7 @@ html {
 }
 
 #homepage-display-btn {
-    display:flex;
-    margin : 0 auto;
+    margin-top: 30px;
     background: rgb(181, 255, 181);
     border-radius: 4px;
     padding-left: 1rem;
