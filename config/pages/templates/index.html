@@ -22,20 +22,20 @@
             </form>
         </div>
         <div style="margin: 2%">
-            <form action='searchIssue' method='GET'>
-                <label for="issueTitle">Search a specific issue title</label>
+            <form action='getTimeDifferencesGraph' method='GET'>
+                <label for="issueTitle"> Search a specific issue title</label>
                 <input type="text" id="issueTitle" name="issueTitle">
-                <label for="issueTitle">Choose a time difference limit (max = 204)</label>
-                <input type="text" id="issueTitle" name="issueTitle">
+                <label for="regLimit">Choose a time difference limit (max = 204)</label>
+                <input type="text" id="regLimit" name="regLimit">
                 <button id="homepage-display-btn">Search Issue</button>
             </form>
         </div>
         <div style="margin: 2%">
-            <form action='searchIssueStatus' method='GET'>
-                <label for="issueTitle">Search a specific issue status</label>
-                <input type="text" id="issueTitle" name="issueTitle">
-                <label for="issueTitle">Choose a avg time difference limit (max = 204)</label>
-                <input type="text" id="issueTitle" name="issueTitle">
+            <form action='getAvgStatusTimeDifferencesGraph' method='GET'>
+                <label for="issueStatus">Search a specific issue status</label>
+                <input type="text" id="issueStatus" name="issueStatus">
+                <label for="avgLimit"> Choose a avg time difference limit (max = 204)</label>
+                <input type="text" id="avgLimit" name="avgLimit">
                 <button id="homepage-display-btn">Search Issue Status</button>
             </form>
         </div>

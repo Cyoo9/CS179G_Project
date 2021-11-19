@@ -25,16 +25,37 @@ def hello(request):
 def timeDifferences(request):
     #context
     db = mysql.connector.connect(user="caleb", password="password")
-    cursor = db.cursor();
+    cursor = db.cursor()
     cursor.execute("USE cs179g")
-    cursor.execute("SELECT * FROM TimeDifferences;")
+    issueTitle = request.GET.get('issueTitle')
+    timeDiffLimit = request.GET.get('regLimit')
+    if(issueTitle and timeDiffLimit):
+        cursor.execute('SELECT * FROM TimeDifferences WHERE TimeDifferences.issue_titles = %s AND TimeDifferences.time_differences <= %s', (issueTitle, timeDiffLimit))
+    elif(issueTitle and not timeDiffLimit):
+        cursor.execute('SELECT * FROM TimeDifferences WHERE TimeDifferences.issue_titles = %s', (issueTitle,))
+    elif(not issueTitle and timeDiffLimit):
+        cursor.execute('SELECT * FROM TimeDifferences WHERE TimeDifferences.time_differences <= %s', (timeDiffLimit,))
+    else:
+        cursor.execute("SELECT * FROM TimeDifferences;")
     context = cursor.fetchall()
+    cursor.close()
     return render(request, 'time_differences.html', {"data" : context})
+
 def averageStatusTimeDifference(request):
     #add range for average time difference SELECT * FROM AverageTimeDifferences WHERE AverageTimeDifferences._2 > request.GET.
     db = mysql.connector.connect(user="caleb", password="password")
-    cursor = db.cursor();
+    cursor = db.cursor()
     cursor.execute("USE cs179g")
-    cursor.execute("SELECT * FROM AverageTimeDifferences;")
+    issueStatus = request.GET.get('issueStatus')
+    timeDiffLimit = request.GET.get('avgLimit')
+    if(issueStatus and timeDiffLimit):
+        cursor.execute('SELECT * FROM AverageTimeDifferences WHERE AverageTimeDifferences.issue_statuses = %s AND AverageTimeDifferences.avg_time_differences <= %s', (issueStatus, timeDiffLimit))
+    elif(issueStatus and not timeDiffLimit):
+        cursor.execute('SELECT * FROM AverageTimeDifferences WHERE AverageTimeDifferences.issue_statuses = %s', (issueStatus,))
+    elif(not issueStatus and timeDiffLimit):
+        cursor.execute('SELECT * FROM AverageTimeDifferences WHERE AverageTimeDifferences.avg_time_differences < %s', (timeDiffLimit,))
+    else:
+        cursor.execute("SELECT * FROM AverageTimeDifferences;")
     context = cursor.fetchall()
+    cursor.close()
     return render(request, 'avg_time_differences.html', {"data" : context})
