@@ -10,28 +10,35 @@
     <div id="homepage-title">
         <h1>Github Bug Report Analytics for Facebook React</h1>
     </div>
-
-    <div id="homepage-display-btn-container">
-        <form action='getTimeDifferencesGraph' method='GET'>
-            <button id="homepage-display-btn" type='submit'>Time Differences</button>
-        </form>
-    </div>
-    <div>
-        <form action='searchIssue' method='GET'>
-            <!-- search issue title -->
-            <!-- choose time difference range -->
-            <button>Search Issue</button>
-        </form>
-        <form action='searchIssueStatus' method='GET'>
-            <!-- search issue status -->
-            <!-- choose time difference avg range -->
-            <button>Search Issue Status</button>
-        </form>
-    </div>
-    <div>
-        <form action='getAvgStatusTimeDifferencesGraph' method='GET'>
-            <button id="homepage-display-btn" type='submit'>Average Time Differences</button>
-        </form>
+    <div style="text-align: center;">
+        <div style="margin: 2%">
+            <form action='getTimeDifferencesGraph' method='GET'>
+                <button id="homepage-display-btn" type='submit'>Time Differences</button>
+            </form>
+        </div>
+        <div style="margin: 2%">
+            <form action='getAvgStatusTimeDifferencesGraph' method='GET'>
+                <button id="homepage-display-btn" type='submit'>Average Time Differences</button>
+            </form>
+        </div>
+        <div style="margin: 2%">
+            <form action='getTimeDifferencesGraph' method='GET'>
+                <label for="issueTitle"> Search a specific issue title</label>
+                <input type="text" id="issueTitle" name="issueTitle">
+                <label for="regLimit">Choose a time difference limit (max = 204)</label>
+                <input type="text" id="regLimit" name="regLimit">
+                <button id="homepage-display-btn">Search Issue</button>
+            </form>
+        </div>
+        <div style="margin: 2%">
+            <form action='getAvgStatusTimeDifferencesGraph' method='GET'>
+                <label for="issueStatus">Search a specific issue status</label>
+                <input type="text" id="issueStatus" name="issueStatus">
+                <label for="avgLimit"> Choose a avg time difference limit (max = 204)</label>
+                <input type="text" id="avgLimit" name="avgLimit">
+                <button id="homepage-display-btn">Search Issue Status</button>
+            </form>
+        </div>
     </div>
 </body>
 

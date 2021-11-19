@@ -42,7 +42,6 @@ db_connection = mysql.connector.connect(
   auth_plugin='mysql_native_password'
 )
 
-
 db_cursor = db_connection.cursor(buffered=True)
 db_cursor.execute("USE cs179g;")
 db_cursor.execute(" DROP TABLE IF EXISTS TimeDifferences; \
@@ -53,6 +52,25 @@ db_cursor.execute(" DROP TABLE IF EXISTS TimeDifferences; \
     time_differences FLOAT,\
     release_tags TEXT);")
 
+db_cursor.close()
+
+db_connection = mysql.connector.connect(
+  host="localhost",
+  user="caleb",
+  password="password",
+  database="cs179g",
+  auth_plugin='mysql_native_password'
+)
+
+db_cursor = db_connection.cursor(buffered=True)
+db_cursor.execute("USE cs179g;")
+db_cursor.execute(" DROP TABLE IF EXISTS AverageTimeDifferences; \
+    CREATE TABLE AverageTimeDifferences(\
+    issue_statuses TEXT, \
+    avg_time_differences FLOAT);")
+
+db_cursor.close()
+
 prDF = pull_requests_info.toDF()
 issueDF = issues_info.toDF()
 releaseDF = releases_info.toDF()
@@ -62,7 +80,6 @@ desiredPRIssue = prDF.join(issueDF, prDF.linked_issue[1] == issueDF.issue_title,
 desiredReleasePRIssue = desiredPRIssue.join(releaseDF, releaseDF.pull_request_ids.cast("string").contains(desiredPRIssue.id[0]), how="inner")
 
 processed_data = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } 
-row = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } #goes into mysql. con
 
 for issueAndRelease in desiredReleasePRIssue.collect():
   if(issueAndRelease.id[0] in issueAndRelease.pull_request_ids):
@@ -86,7 +103,6 @@ for issueAndRelease in desiredReleasePRIssue.collect():
                       
     query = "INSERT INTO TimeDifferences VALUES (%s, %s, %s, %s, %s);"
     data = (processed_data['issue_titles'][-1], processed_data['issue_statuses'][-1], processed_data['release_features_and_fixes'][-1], processed_data['time_differences'][-1], processed_data['release_tags'][-1])
-    db_cursor.close()
 
     db_connection = mysql.connector.connect(
         host="localhost",
@@ -108,7 +124,6 @@ for issueAndRelease in desiredReleasePRIssue.collect():
 
 status_time_diff = sparkCont.parallelize(list(zip(processed_data['issue_statuses'], processed_data['time_differences'])))
 
-print(status_time_diff.collect())
 status_frequencies = []
 for status in processed_data["issue_statuses"]:
     status_frequencies.append((status, 1))
@@ -119,14 +134,26 @@ status_frequencies_total = status_frequencies_parallelized.reduceByKey(lambda x,
 
 avg_time_diff = status_time_diff_total.join(status_frequencies_total).mapValues(lambda x: x[0] / x[1])
 
-#storing avg_time_diff into database table named AverageTimeDifferences
-avg_time_diff_df = sc.createDataFrame(avg_time_diff)
-avg_time_diff_df = avg_time_diff_df.toPandas()
-engine = create_engine("mysql+pymysql://caleb:password@localhost/cs179g")
-avg_time_diff_df.to_sql(con=engine, name='AverageTimeDifferences', if_exists='replace', index=False)
+# #storing avg_time_diff into database table named AverageTimeDifferences
+# avg_time_diff_df = sc.createDataFrame(avg_time_diff)
 
-print("avg time diffs for each status: ")
-print(avg_time_diff.collect())
+# avg_time_diff_df = avg_time_diff_df.toPandas()
+# engine = create_engine("mysql+pymysql://caleb:password@localhost/cs179g")
+# avg_time_diff_df.to_sql(con=engine, name='AverageTimeDifferences')
+
+for avgTimeDiffStatus in avg_time_diff.collect():
+    db_connection = mysql.connector.connect(
+        host="localhost",
+        user="caleb",
+        password="password",
+        database="cs179g",
+        auth_plugin='mysql_native_password'
+    )
+    db_cursor = db_connection.cursor(buffered=True)
+    db_cursor.execute("USE cs179g;")
+    db_cursor.execute('INSERT INTO AverageTimeDifferences VALUES (%s, %s);', (avgTimeDiffStatus[0].replace(' ',''), avgTimeDiffStatus[1]))
+    db_cursor.execute("FLUSH TABLES;")
+    db_cursor.close()
 
 endTime = time.time()
 
