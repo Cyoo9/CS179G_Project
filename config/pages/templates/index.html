@@ -13,12 +13,22 @@
     <div style="text-align: center;">
         <div style="margin: 2%">
             <form action='getTimeDifferencesGraph' method='GET'>
-                <button id="homepage-display-btn" type='submit'>Time Differences</button>
+                <button id="homepage-display-btn" type='submit'>Time Differences Bar Graph</button>
+            </form>
+        </div>
+        <div style="margin: 2%">
+            <form action='getTimeDifferencesGraphPieTable' method='GET'>
+                <button id="homepage-display-btn" type='submit'>Time Differences Pie Chart and Table</button>
             </form>
         </div>
         <div style="margin: 2%">
             <form action='getAvgStatusTimeDifferencesGraph' method='GET'>
-                <button id="homepage-display-btn" type='submit'>Average Time Differences</button>
+                <button id="homepage-display-btn" type='submit'>Average Time Differences Bar Graph</button>
+            </form>
+        </div>
+        <div style="margin: 2%">
+            <form action='getAvgStatusTimeDifferencesGraphPieTable' method='GET'>
+                <button id="homepage-display-btn" type='submit'>Average Time Differences Pie Chart and Table</button>
             </form>
         </div>
         <div style="margin: 2%">
@@ -27,7 +37,16 @@
                 <input type="text" id="issueTitle" name="issueTitle">
                 <label for="regLimit">Choose a time difference limit (max = 204)</label>
                 <input type="text" id="regLimit" name="regLimit">
-                <button id="homepage-display-btn">Search Issue</button>
+                <button id="homepage-display-btn">Search Issue Bar Graph</button>
+            </form>
+        </div>
+        <div style="margin: 2%">
+            <form action='getTimeDifferencesGraphPieTable' method='GET'>
+                <label for="issueTitle"> Search a specific issue title</label>
+                <input type="text" id="issueTitle" name="issueTitle">
+                <label for="regLimit">Choose a time difference limit (max = 204)</label>
+                <input type="text" id="regLimit" name="regLimit">
+                <button id="homepage-display-btn">Search Issue Pie Chart and Table</button>
             </form>
         </div>
         <div style="margin: 2%">
@@ -36,7 +55,16 @@
                 <input type="text" id="issueStatus" name="issueStatus">
                 <label for="avgLimit"> Choose a avg time difference limit (max = 204)</label>
                 <input type="text" id="avgLimit" name="avgLimit">
-                <button id="homepage-display-btn">Search Issue Status</button>
+                <button id="homepage-display-btn">Search Issue Status Bar Graph</button>
+            </form>
+        </div>
+        <div style="margin: 2%">
+            <form action='getAvgStatusTimeDifferencesGraphPieTable' method='GET'>
+                <label for="issueStatus">Search a specific issue status</label>
+                <input type="text" id="issueStatus" name="issueStatus">
+                <label for="avgLimit"> Choose a avg time difference limit (max = 204)</label>
+                <input type="text" id="avgLimit" name="avgLimit">
+                <button id="homepage-display-btn">Search Issue Status Pie Chart and Table</button>
             </form>
         </div>
     </div>

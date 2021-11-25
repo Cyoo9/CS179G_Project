@@ -12,7 +12,8 @@
 <body>
 
     <div>
-        <div id="chart_div"></div>
+        <div id="table_div"></div>
+        <div id="pie_div"></div>
     </div>
 
     {{data | json_script:"time-data"}}
@@ -46,8 +47,8 @@
             var options = {
                 title: "Facebook Github Repo Issues Title Time Difference",
                 chartArea: {
-                    width: '90%',
-                    height: '60%',
+                    width: '200%',
+                    height: '200%',
                 },
                 hAxis: {
                     title: "Issue Titles",
@@ -62,12 +63,37 @@
                 },
             };
 
-            var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
+            var chart = new google.visualization.PieChart(document.getElementById("pie_div"));
 
             chart.draw(data, options);
         }
     </script>
-  
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['table'] });
+        google.charts.setOnLoadCallback(drawTable);
+
+        function drawTable() {
+
+            var temp = JSON.parse(
+                document.getElementById("time-data").textContent
+            );
+            let temp_data = [];
+            temp_data.push(["Issue_Titles", "Time_Differences"]);
+            for (var i = 0; i < temp.length; i++) {
+                temp_data.push([temp[i][0], parseInt(temp[i][3])]);
+            }
+
+            var data = google.visualization.arrayToDataTable(temp_data);
+
+            data.sort({ column: 1, desc: true });
+
+            var table = new google.visualization.Table(document.getElementById('table_div'));
+
+            table.draw(data, { showRowNumber: true, width: '70%', height: '100%' });
+        }
+    </script>
+
 </body>
 
 </html>

@@ -5,7 +5,8 @@ from . import views
 
 urlpatterns = [
     path('', views.homePageView, name='index'),
-    path('actionUrl', views.hello, name='hello'),
     path('getTimeDifferencesGraph', views.timeDifferences, name='timeDifferences'),
+    path('getTimeDifferencesGraphPieTable', views.timeDifferencesPieTable, name='timeDifferencesPieTable'),
+    path('getAvgStatusTimeDifferencesGraphPieTable', views.averageStatusTimeDifferencePieTable, name='averageStatusTimeDifferencePieTable'),
     path('getAvgStatusTimeDifferencesGraph', views.averageStatusTimeDifference, name='averageStatusTimeDifference')
 ]
