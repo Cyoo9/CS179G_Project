@@ -17,11 +17,11 @@ f2.close()
 
 for pr in pull_requests:
     if pr['linked_issue']:
-        pr['linked_issue'][1] = pr['linked_issue'][1].replace('\n', '').replace(' ', '')
+        pr['linked_issue'][1] = pr['linked_issue'][1].replace('\n', ' ').replace('  ', ' ').replace('   ', ' ').strip()
         pr['linked_issue'][0] = ''
 
 for issue in issues:
-    issue['title'] = issue['title'].replace(' ', '')
+    issue['title'] = issue['title'].replace('  ', ' ').replace('   ', ' ').strip()
     issue['issue_title'] = issue.pop('title')
     issue['issue_date'] = issue.pop('date')
 
