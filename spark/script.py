@@ -29,9 +29,9 @@ pull_requests_info = sparkCont.parallelize(df.select('id', 'linked_issue', 'titl
 issues = sc.read.option("multiline", "true").json("issues_filtered.json")
 issues.createOrReplaceTempView("issues_json")
 df = sc.sql("SELECT * from issues_json")
-issues_info = sparkCont.parallelize(df.select('issue_title', 'url', 'issue_date', 'status').collect()) #need to merge this with other issue fields
+issues_info = sparkCont.parallelize(df.select('issue_title', 'title_copy', 'url', 'issue_date', 'status').collect()) #need to merge this with other issue fields
 
-issues_infoCopy = df.select('issue_title', 'url', 'issue_date', 'status').collect() #need to merge this with other issue fields
+issues_infoCopy = df.select('issue_title', 'title_copy', 'url', 'issue_date', 'status').collect() #need to merge this with other issue fields
 
 # make the table
 db_connection = mysql.connector.connect(
@@ -79,18 +79,21 @@ desiredPRIssue = prDF.join(issueDF, prDF.linked_issue[1] == issueDF.issue_title,
 
 desiredReleasePRIssue = desiredPRIssue.join(releaseDF, releaseDF.pull_request_ids.cast("string").contains(desiredPRIssue.id[0]), how="inner")
 
-processed_data = { "issue_titles": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } 
+processed_data = { "issue_titles": [], "title_copies": [], "issue_statuses": [], "release_features_and_fixes": [], "time_differences": [], "release_tags": [] } 
 
 for issueAndRelease in desiredReleasePRIssue.collect():
   if(issueAndRelease.id[0] in issueAndRelease.pull_request_ids):
     timeDiff = (dateutil.parser.parse(issueAndRelease.date).timestamp() - dateutil.parser.parse(issueAndRelease.issue_date).timestamp()) / 86400
 
     processed_data['issue_titles'].append(issueAndRelease.issue_title)
+    processed_data['title_copies'].append(issueAndRelease.title_copy)
 
     status = ''
     for i in range(len(issueAndRelease.status)):
       status += ' ' + issueAndRelease.status[i]
 
+    if(status == ''):
+      status = 'Status Unknown'
     processed_data['issue_statuses'].append(status)
 
     release_features_and_fixes = ''
@@ -102,7 +105,7 @@ for issueAndRelease in desiredReleasePRIssue.collect():
     processed_data['release_tags'].append(issueAndRelease.tag)
                       
     query = "INSERT INTO TimeDifferences VALUES (%s, %s, %s, %s, %s);"
-    data = (processed_data['issue_titles'][-1], processed_data['issue_statuses'][-1], processed_data['release_features_and_fixes'][-1], processed_data['time_differences'][-1], processed_data['release_tags'][-1])
+    data = (processed_data['title_copies'][-1], processed_data['issue_statuses'][-1], processed_data['release_features_and_fixes'][-1], processed_data['time_differences'][-1], processed_data['release_tags'][-1])
 
     db_connection = mysql.connector.connect(
         host="localhost",
@@ -151,7 +154,7 @@ for avgTimeDiffStatus in avg_time_diff.collect():
     )
     db_cursor = db_connection.cursor(buffered=True)
     db_cursor.execute("USE cs179g;")
-    db_cursor.execute('INSERT INTO AverageTimeDifferences VALUES (%s, %s);', (avgTimeDiffStatus[0].replace(' ',''), avgTimeDiffStatus[1]))
+    db_cursor.execute('INSERT INTO AverageTimeDifferences VALUES (%s, %s);', (avgTimeDiffStatus[0], avgTimeDiffStatus[1]))
     db_cursor.execute("FLUSH TABLES;")
     db_cursor.close()
 
