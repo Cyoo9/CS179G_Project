@@ -21,6 +21,7 @@ for pr in pull_requests:
         pr['linked_issue'][0] = ''
 
 for issue in issues:
+    issue['title_copy'] = issue['title']
     issue['title'] = issue['title'].replace(' ', '')
     issue['issue_title'] = issue.pop('title')
     issue['issue_date'] = issue.pop('date')
