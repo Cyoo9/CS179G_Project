@@ -3,12 +3,13 @@
 
 <head>
     <title>Facebook Time Differences</title>
-    <link rel="stylesheet" href="../static/css/avg_time_differences.css">
+    <link rel="stylesheet" href="../static/css/time_differences.css">
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
+    <h1>Average Time Difference Table and Piechart</h1>
     <div>
         <div id="table_div"></div>
         <div id="pie_div"></div>
@@ -44,8 +45,8 @@
             var options = {
                 title: "Facebook Github Repo Issues Title Time Difference",
                 chartArea: {
-                    width: '200%',
-                    height: '200%',
+                    width: '100%',
+                    height: '100%',
                 },
                 hAxis: {
                     title: "Issue Titles",
@@ -86,7 +87,7 @@
 
             var table = new google.visualization.Table(document.getElementById('table_div'));
 
-            table.draw(data, { showRowNumber: true, width: '70%', height: '100%' });
+            table.draw(data, { showRowNumber: true, width: '100%', height: '100%' });
         }
     </script>
 
