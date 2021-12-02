@@ -90,11 +90,16 @@ for issueAndRelease in desiredReleasePRIssue.collect():
 
     status = ''
     for i in range(len(issueAndRelease.status)):
-      status += ' ' + issueAndRelease.status[i]
+      if(i != 0):
+        status += ' ' + issueAndRelease.status[i]
+      else:
+        status += issueAndRelease.status[i]
 
     if(status == ''):
       status = 'Status Unknown'
     processed_data['issue_statuses'].append(status)
+
+    print(status)
 
     release_features_and_fixes = ''
     for i in range(len(issueAndRelease.features_and_fixes)):
